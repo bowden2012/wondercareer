@@ -27,10 +27,8 @@ ActiveRecord::Schema.define(version: 20161003172456) do
   create_table "fields", force: :cascade do |t|
     t.string   "name"
     t.string   "description"
-    t.integer  "field_interests_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-    t.index ["field_interests_id"], name: "index_fields_on_field_interests_id", using: :btree
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "figures", force: :cascade do |t|
@@ -38,18 +36,16 @@ ActiveRecord::Schema.define(version: 20161003172456) do
     t.string   "bio"
     t.string   "tagline"
     t.string   "image"
-    t.integer  "fields_id"
+    t.integer  "field_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["fields_id"], name: "index_figures_on_fields_id", using: :btree
+    t.index ["field_id"], name: "index_figures_on_field_id", using: :btree
   end
 
   create_table "interests", force: :cascade do |t|
     t.string   "name"
-    t.integer  "field_interests_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-    t.index ["field_interests_id"], name: "index_interests_on_field_interests_id", using: :btree
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "links", force: :cascade do |t|

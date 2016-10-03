@@ -5,7 +5,7 @@ class CreateFigures < ActiveRecord::Migration[5.0]
       t.string :bio
       t.string :tagline
       t.string :image
-      t.references :fields, index: true
+      t.references :field, index: true
 
       t.timestamps
     end
