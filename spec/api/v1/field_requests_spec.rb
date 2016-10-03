@@ -19,7 +19,20 @@ describe 'GET api/v1/fields' do
     expect(response).to be_success
     expect(response_body.length).to eq(2)
   end
-
+end
+describe 'GET api/v1/fields/1' do
   it 'retrieve one field in the api' do
-    
+    interest1 = Interest.new(name: "Crafting")
+    field1 = Field.new(name: "Music", description: "Making gnarly tunage")
+
+    field1.interests << interest1
+    interest1.fields << field1
+    interest1.save
+    field1.save
+
+    get '/api/v1/fields/' + field1.id.to_s
+    response_body = JSON.parse(response.body)
+    expect(response).to be_success
+    expect(response_body['name']).to eq("Music")
+  end
 end
