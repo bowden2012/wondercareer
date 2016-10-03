@@ -2,7 +2,7 @@
 figure = Figure.new(name: Faker::Superhero.name, bio: Faker::ChuckNorris.fact.gsub('Chuck Norris', 'Ada Lovelace'), tagline: Faker::StarWars.quote, image: Faker::Company.logo)
 
 # making a field
-field = Field.create(name: Faker::Color.color_name + Faker::Space.planet, description: Faker::Hacker.say_something_smart)
+field = Field.create(name: Faker::Color.color_name.capitalize + " " + Faker::Space.planet, description: Faker::Hacker.say_something_smart)
 
 # assigning figure to field
 field.figures << figure
