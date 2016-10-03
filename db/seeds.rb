@@ -20,7 +20,7 @@ figure.save
 
 # making lots of fields
 10.times do 
-	Field.create(name: Faker::Space.planet, description: Faker::Hacker.say_something_smart)
+	Field.create(name: Faker::Color.color_name.capitalize + " " + Faker::Space.planet, description: Faker::Hacker.say_something_smart)
 end
 
 fields = Field.all
