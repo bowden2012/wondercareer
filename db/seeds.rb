@@ -1,26 +1,25 @@
-# making a figure
-figure = Figure.new(name: Faker::Superhero.name, bio: Faker::ChuckNorris.fact.gsub('Chuck Norris', 'Ada Lovelace'), tagline: Faker::StarWars.quote, image: Faker::Company.logo)
+# making some interests
+Interest.create(name: "puzzles")
+Interest.create(name: "animals")
+Interest.create(name: "cooking")
+Interest.create(name: "science")
+Interest.create(name: "art")
+Interest.create(name: "music")
+Interest.create(name: "talking")
+Interest.create(name: "sitting")
+Interest.create(name: "computer science")
+Interest.create(name: "songwriting")
+Interest.create(name: "writing")
+Interest.create(name: "drinking coffee while driving")
+Interest.create(name: "amateur philosophizing")
 
-# making a field
-field = Field.create(name: Faker::Color.color_name.capitalize + " " + Faker::Space.planet, description: Faker::Hacker.say_something_smart)
-
-# assigning figure to field
-field.figures << figure
-figure.save
-
-# making some links
-link1 = Link.new(title: Faker::Company.catch_phrase, url: Faker::Internet.url)
-link2 = Link.new(title: Faker::Company.catch_phrase, url: Faker::Internet.url)
-link3 = Link.new(title: Faker::Company.catch_phrase, url: Faker::Internet.url)
-
-figure.links << link1
-figure.links << link2
-figure.links << link3
-figure.save
+interests = Interest.all
 
 # making lots of fields
-10.times do 
-	Field.create(name: Faker::Color.color_name.capitalize + " " + Faker::Space.planet, description: Faker::Hacker.say_something_smart)
+10.times do
+	field = Field.new(name: Faker::Color.color_name.capitalize + " " + Faker::Space.planet, description: Faker::Hacker.say_something_smart)
+	field.interests << Interest.limit(3).order("RANDOM()")
+	field.save
 end
 
 fields = Field.all
@@ -40,29 +39,11 @@ figures = Figure.all
 
 # assigning 3 links to each figure
 figures.each do |figure|
-	link1 = Link.new(title: Faker::Company.catch_phrase, url: Faker::Internet.url)
-	link2 = Link.new(title: Faker::Company.catch_phrase, url: Faker::Internet.url)
-	link3 = Link.new(title: Faker::Company.catch_phrase, url: Faker::Internet.url)
+	link1 = Link.create(title: Faker::Company.catch_phrase, url: Faker::Internet.url)
+	link2 = Link.create(title: Faker::Company.catch_phrase, url: Faker::Internet.url)
+	link3 = Link.create(title: Faker::Company.catch_phrase, url: Faker::Internet.url)
 	figure.links << link1
 	figure.links << link2
 	figure.links << link3
 	figure.save
 end
-
-# making some interests
-Interest.create(name: "puzzles")
-Interest.create(name: "animals")
-Interest.create(name: "cooking")
-Interest.create(name: "science")
-Interest.create(name: "art")
-Interest.create(name: "music")
-Interest.create(name: "talking")
-
-interests = Interest.all
-
-# assign interests to fields
-fields.each do |field|
-	field.interests << Interest.limit(3).order("RANDOM()")
-	# field.interests << interests.sample(3)
-end
-
