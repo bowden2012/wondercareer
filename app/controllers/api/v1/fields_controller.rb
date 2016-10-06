@@ -3,9 +3,16 @@ module Api
     class FieldsController < ApplicationController
 
       def index
-        interestIdArray = JSON.parse(params['interestIds'])
-        render json: Field.joins(:interests).where(interests: {id: interestIdArray})
+        if params['interestIds']
+          interestIdArray = JSON.parse(params['interestIds'])
+        end
 
+        render json: Field.joins(:interests).where(interests: {id: interestIdArray})
+  
+        # respond_to do |f|
+        #   f.html { render json: Field.all }
+        #   f.json { render json: Field.joins(:interests).where(interests: {id: interestIdArray})}
+        # end
       end
 
       def show
