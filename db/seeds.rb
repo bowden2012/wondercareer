@@ -21,15 +21,15 @@ bugs = Interest.create(name: "bugs")
 living_things = Interest.create(name: "living things")
 environment = Interest.create(name: "environment")
 molecules = Interest.create(name: "molecules")
-science = Interest.create(name: "science")
+science_int = Interest.create(name: "science")
 puzzles = Interest.create(name: "puzzles")
 animals = Interest.create(name: "animals")
 comp_sci = Interest.create(name: "computer science")
 psychology = Interest.create(name: "psychology")
 funky_clothes = Interest.create(name: "wearing funky clothes")
 getting_messy = Interest.create(name: "getting messy")
-art = Interest.create(name: "art")
-music = Interest.create(name: "listening to music")
+art_int = Interest.create(name: "art")
+music_int = Interest.create(name: "listening to music")
 songwriting = Interest.create(name: "songwriting")
 appreciating_beauty = Interest.create(name: "appreciating beauty in the world")
 telling_puns = Interest.create(name: "telling puns")
@@ -91,84 +91,72 @@ systems = Interest.create(name: "understanding new systems")
 
 # SCIENCE
 science = Field.create(name: "science", description: "systematic knowledge of the physical or material world gained through observation and experimentation.")
-science_interests = [bugs, living_things, environment, molecules, puzzles, animals, comp_sci, research, psychology, critical_thinking, systems]
+science_interests = [bugs, living_things, environment, molecules, puzzles, animals, comp_sci, research, psychology, critical_thinking, systems, science_int]
 science.interests << science_interests
-science.interests.flatten!
 science.save
 
 # ART
 art = Field.create(name: "art", description: "Creating!")
-art_interests = [funky_clothes, getting_messy, art, music, songwriting, appreciating_beauty, telling_puns, making_a_statement, being_unique, critical_thinking, writing]
+art_interests = [funky_clothes, getting_messy, art_int, music_int, songwriting, appreciating_beauty, telling_puns, making_a_statement, being_unique, critical_thinking, writing]
 art.interests << art_interests
-art.interests.flatten!
 art.save
 
 # MUSIC
 music = Field.create(name: "music", description: "Making cool noises!")
-music_interests = [songwriting, drumming, singing, dancing, funky_clothes, appreciating_beauty, being_unique, telling_puns, making_a_statement, art, audio_production, performing, fine_wine, critical_thinking, playing_instruments]
+music_interests = [songwriting, drumming, singing, dancing, funky_clothes, appreciating_beauty, being_unique, telling_puns, making_a_statement, art_int, audio_production, performing, fine_wine, critical_thinking, playing_instruments]
 music.interests << music_interests
-music.interests.flatten!
 music.save
 
 # EDUCATION
 education = Field.create(name: "education", description: "Teaching skills to others.")
-edu_interests = [education, public_speaking, teaching, helping_others, critical_thinking, playing_with_children]
+edu_interests = [public_speaking, teaching, helping_others, critical_thinking, playing_with_children]
 education.interests << edu_interests
-education.interests.flatten!
 education.save
 
 # BUSINESS
 business = Field.create(name: "business", description: "Taking care of business.")
 business_interests = [public_speaking, suits, finance, cool_ideas, helping_others, making_a_statement, talking]
 business.interests << business_interests
-business.interests.flatten!
 business.save
 
 # TECH
 tech = Field.create(name: "technology", description: "Taking care of tech business.")
 tech_interests = [comp_sci, problem_solving, puzzles, gadgets, programming, critical_thinking, systems]
 tech.interests << tech_interests
-tech.interests.flatten!
 tech.save
 
 # HOSPITALITY
 hospitality = Field.create(name: "hospitality", description: "Taking care of people.")
 hospitality_interests = [cooking, helping_others, managing, hosting, organizing, fine_wine]
 hospitality.interests << hospitality_interests
-hospitality.interests.flatten!
 hospitality.save
 
 # HEALTHCARE
 healthcare = Field.create(name: "healthcare", description: "Taking care of business.")
 healthcare_interests = [animals, helping_others, living_things, anatomy, germs, research, psychology, playing_with_children]
 healthcare.interests << healthcare_interests
-healthcare.interests.flatten!
 healthcare.save
 
 # EDITORIAL
 editorial = Field.create(name: "editorial", description: "Taking care of business.")
 editorial_interests = [writing, research, books, reading, critical_thinking, cats, coffee, problem_solving, poetry, literature]
 editorial.interests << editorial_interests
-editorial.interests.flatten!
 editorial.save
 
 # ENGINEERING
 engineering = Field.create(name: "engineering", description: "Taking care of business.")
 engineering_interests = [making_things, gadgets, programming, problem_solving, legos, architecture, critical_thinking, systems]
 engineering.interests << engineering_interests
-engineering.interests.flatten!
 engineering.save
 
 # LAW
 law = Field.create(name: "law and politics", description: "Taking care of business.")
 law_interests = [talking, policy, helping_others, history, making_history, problem_solving, critical_thinking, politics]
 law.interests << law_interests
-law.interests.flatten!
 law.save
 
 # TRADE
 trade = Field.create(name: "manual trade", description: "Taking care of business.")
-trade_interests = [outdoors, exploring, crafts, hands, woodworking, roofs, problem_solving, science, systems]
+trade_interests = [outdoors, exploring, crafts, hands, woodworking, roofs, problem_solving, science_int, systems]
 trade.interests << trade_interests
-trade.interests.flatten!
 trade.save

@@ -5,5 +5,5 @@ class Field < ApplicationRecord
 
     validates :name, presence: true
     validates :description, presence: true
-    validates :interests, presence: true
+    # validates :interests, presence: true
 end
