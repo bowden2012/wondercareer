@@ -10,7 +10,7 @@ module Api
 
       def show
         render json: Field.find(params[:id])
-          
+
       end
 
       private
