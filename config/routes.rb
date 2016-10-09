@@ -7,7 +7,7 @@ Rails.application.routes.draw do
       resources :interests, only: [:index, :show]
       resources :quizzes, only: [:index, :show]
       resources :questions, only: [:index, :show]
-      resources :answers, only: [:index, :show]
+      # resources :answers, only: [:index, :show]
 
     end
   end

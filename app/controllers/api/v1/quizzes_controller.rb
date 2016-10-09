@@ -3,7 +3,7 @@ module Api
     class QuizzesController < ApplicationController
 
       def index
-        render json: Quiz.all # include: 'questions, answers'
+        render json: Quiz.all
       end
 
       def show

@@ -169,7 +169,7 @@ quiz = Quiz.create(title: "Career Quiz")
 
 question1 = Question.create(question_content: "What would you rather do on a free Saturday?", quiz_id: quiz.id)
 
-answer1 = Answer.create(answer_content: "Fixing people", scoring: {"science": 1, "healthcare": 1, "education": 1}, question_id: question1.id)
-answer2 = Answer.create(answer_content: "Shopping at thrift-stores", scoring: {"art": 1, "music": 1}, question_id: question1.id)
-answer3 = Answer.create(answer_content: "Building a custom computer", scoring: {"tech": 1, "engineering": 1, "science": 1, "trade": 1}, question_id: question1.id)
-answer4 = Answer.create(answer_content: "Enjoying fine wines", scoring: {"hospitality": 1, "music": 1, "editorial": 1, "law": 1, "business": 1}, question_id: question1.id)
+answer1 = Answer.create(answer_content: "Fixing people", scoring: '{"science": 1, "healthcare": 1, "education": 1}', question_id: question1.id)
+answer2 = Answer.create(answer_content: "Shopping at thrift-stores", scoring: '{"art": 1, "music": 1}', question_id: question1.id)
+answer3 = Answer.create(answer_content: "Building a custom computer", scoring: '{"tech": 1, "engineering": 1, "science": 1, "trade": 1}', question_id: question1.id)
+answer4 = Answer.create(answer_content: "Enjoying fine wines", scoring: '{"hospitality": 1, "music": 1, "editorial": 1, "law": 1, "business": 1}', question_id: question1.id)
