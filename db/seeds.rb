@@ -211,8 +211,19 @@ business_link3 = Link.create(title: "The Conquer Kit: A Creative Business Planne
 
 # TECH
 grace_hopper = Figure.create(name: "Grace Hopper", bio: "Grace Hopper was an American computer scientist and United States Navy Rear Admiral. She was one of the first programmers of the Harvard Mark I computer in 1944, invented the first compiler for a computer programming language,and was one of those who popularized the idea of machine-independent programming languages which led to the development of COBOL, one of the first high-level programming languages.", tagline: "I've always been more interested in the future than in the past.", image: )
-ada_lovelace
+ada_lovelace = Figure.create(name: "Ada Lovelace", bio: "was an English mathematician and writer, chiefly known for her work on Charles Babbage's early mechanical general-purpose computer, the Analytical Engine. Her notes on the engine include what is recognised as the first algorithm intended to be carried out by a machine. As a result, she is often regarded as the first computer programmer.", tagline: "That brain of mine is something more than merely mortal, as time will show.", image: )
+susan_kare = Figure.create(name: "Susan Kare", bio: "Susan Kare was the designer who helped bring the Apple computer to life with her sophisticated typography and iconic graphic design skills. Working alongside Steve Jobs, she shaped many of the now-common interface elements of the Mac, like the command icon, which she found while looking through a book of symbols.", tagline: "In design, there is not one right answer, there's a range.", image: )
+
+#Tech links
+
+tech_link1 = Link.create(title: "She Started It: A Documentary on Women Tech Founders", url: "http://www.shestarteditfilm.com/")
+tech_link2 = Link.create(title: "Learn to code online", url: "www.codecademy.com")
+tech_link3 = Link.create(title: "Learn for free about math, art, computer programming, economics, physics, chemistry, biology, medicine, finance, and history", url: "https://www.khanacademy.org/")
+
 # HOSPITALITY
+alice_waters = Figure.create(name: "Alice Waters", bio: "Alice Waters is an American chef, restaurateur, activist and author. She is the owner of Chez Panisse, a Berkeley, California restaurant famous for its organic, locally grown ingredients and for pioneering California cuisine.", tagline: "is an American chef, restaurateur, activist and author. She is the owner of Chez Panisse, a Berkeley, California restaurant famous for its organic, locally grown ingredients and for pioneering California cuisine.", image: )
+
+
 # HEALTHCARE
 virginia_apgar = Figure.create()
 healthcare_link1 = Link.create(https://www.amazon.com/Girls-Think-Everything-Ingenious-Inventions/dp/0618195637)
