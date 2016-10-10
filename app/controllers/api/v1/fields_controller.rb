@@ -5,10 +5,12 @@ module Api
       def index
         if params['interestIds']
           interestIdArray = JSON.parse(params['interestIds'])
+          render json: Field.joins(:interests).where(interests: {id: interestIdArray})
+        elsif params['fieldNames']
+          fieldNameArray = JSON.parse(params['fieldNames'])
+          render json: Field.where({name: fieldNameArray})
         end
 
-        render json: Field.joins(:interests).where(interests: {id: interestIdArray})
-  
         # respond_to do |f|
         #   f.html { render json: Field.all }
         #   f.json { render json: Field.joins(:interests).where(interests: {id: interestIdArray})}
