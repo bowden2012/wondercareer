@@ -173,9 +173,10 @@ science_link2 = Link.create(title: "Ada Twist, Scientist: A story about the powe
 science_link3 = Link.create(title: "Produced by Minnesota Public Radio, a science podcast for kids.", url: "http://www.brainson.org/")
 
 # ART
-frida_kahlo = Figure.create(name: "Frida Kahlo", bio: "Frida Kahlo is a well-known Mexican painter famous for her self-portraits. Her work has been celebrated internationally as emblematic of Mexican national and indigenous traditions, and by feminists for its uncompromising depiction of the female experience and form.", tagline: "I used to think I was the strangest person in the world but then I thought there are so many people in the world, there must be someone just like me who feels bizarre and flawed in the same ways I do. I would imagine her, and imagine that she must be out there thinking of me, too. Well, I hope that if you are out there and read this and know that, yes, it’s true I’m here, and I’m just as strange as you.", image: )
+frida_kahlo = Figure.new(name: "Frida Kahlo", bio: "Frida Kahlo is a well-known Mexican painter famous for her self-portraits. Her work has been celebrated internationally as emblematic of Mexican national and indigenous traditions, and by feminists for its uncompromising depiction of the female experience and form.", tagline: "I used to think I was the strangest person in the world but then I thought there are so many people in the world, there must be someone just like me who feels bizarre and flawed in the same ways I do. I would imagine her, and imagine that she must be out there thinking of me, too. Well, I hope that if you are out there and read this and know that, yes, it’s true I’m here, and I’m just as strange as you.", image: "frida-kahlo.jpg")
 annie_leibovitz = Figure.create(name: "Annie Leibovitz", bio: "Annie Leibovitz is an American portrait photographer whose works spans more than 40 years. She is the only woman to have held an exhibition at London’s National Portrait Gallery.", tagline: "I'm more interested in being good than in being famous.", image: )
 georgia_okeeffe = Figure.create(name: "Georgia O'Keeffe", bio: "Georgia O'Keeffe was one of the most significant artists of the 20th century. She was devoted to creating imagery that expressed what she called 'the wideness and wonder of the world as I live in it.' O’Keeffe’s images include abstractions, large-scale depictions of flowers, leaves, rocks, shells, bones and other natural forms, New York cityscapes and paintings of the unusual shapes and colors of architectural and landscape forms of northern New Mexico. O'Keeffe has been recognized as the 'Mother of American modernism'.", tagline: "I found I could say things with color and shapes that I couldn't say any other way - things I had no words for.", image: )
+
 
 #Art links
 art_link1 = Link.create(title: "In the Company of Women: Inspiration and Advice from over 100 Makers, Artists, and Entrepreneurs", url: "https://www.amazon.com/Company-Women-Inspiration-Artists-Entrepreneurs/dp/1579655971/ref=sr_1_3?s=books&ie=UTF8&qid=1476036838&sr=1-3&keywords=women+in+art")
@@ -243,8 +244,8 @@ jk_rowling = Figure.create(name: "J.K. Rowling", bio: "J.K. Rowling s a British 
 # ENGINEERING
 maya_lin = Figure.create()
 engineering_link1 = Link.create(title: "Girls Think of Everything: Stories of Ingenious Inventions by Women", url: "https://www.amazon.com/Girls-Think-Everything-Ingenious-Inventions/dp/0618195637")
-engineer_link1 = Link.create(https://www.amazon.com/Rosie-Revere-Engineer-Andrea-Beaty/dp/1419708457)
-engineer_link2 = Link.create(https://www.amazon.com/Maya-Lin-Strong-Clear-Vision/dp/B00008PHD1?tag=amigi-20)
+engineer_link1 = Link.create("https://www.amazon.com/Rosie-Revere-Engineer-Andrea-Beaty/dp/1419708457")
+engineer_link2 = Link.create("https://www.amazon.com/Maya-Lin-Strong-Clear-Vision/dp/B00008PHD1?tag=amigi-20")
 # LAW
 ruth_bader_ginsburg = Figure.create()
 hilary_clinton = Figure.create()
