@@ -129,14 +129,12 @@ science_link1 = Link.create(title: "Radioactive!: How Irène Curie and Lise Meit
 science_link2 = Link.create(title: "Ada Twist, Scientist: A story about the power of curiosity in the hands of a child who is on a mission to use science to understand her world. Ages 4-9.", url: "https://www.amazon.com/Ada-Twist-Scientist-Andrea-Beaty/dp/1419721372")
 science_link3 = Link.create(title: "Produced by Minnesota Public Radio, a science podcast for kids.", url: "http://www.brainson.org/")
 
-science_links = [science_link1, science_link2, science_link3]
-
-marie_curie.links << science_links
-# marie_curie.links.flatten!
-rachel_carson.links << science_links
-# rachel_carson.links.flatten!
-jane_goodall.links << science_links
-# jane_goodall.links.flatten!
+marie_curie.links << science_link1
+marie_curie.save
+rachel_carson.links << science_link2
+rachel_carson.save
+jane_goodall.links << science_link3
+jane_goodall.save
 
 # ART
 frida_kahlo = Figure.new(name: "Frida Kahlo", bio: "Frida Kahlo is a well-known Mexican painter famous for her self-portraits. Her work has been celebrated internationally as emblematic of Mexican national and indigenous traditions, and by feminists for its uncompromising depiction of the female experience and form.", tagline: "I used to think I was the strangest person in the world but then I thought there are so many people in the world, there must be someone just like me who feels bizarre and flawed in the same ways I do. I would imagine her, and imagine that she must be out there thinking of me, too. Well, I hope that if you are out there and read this and know that, yes, it’s true I’m here, and I’m just as strange as you.", image: "http://imgur.com/qT7Zxmu.jpg")
@@ -147,15 +145,14 @@ georgia_okeeffe = Figure.create(name: "Georgia O'Keeffe", bio: "Georgia O'Keeffe
 #Art links
 art_link1 = Link.create(title: "In the Company of Women: Inspiration and Advice from over 100 Makers, Artists, and Entrepreneurs", url: "https://www.amazon.com/Company-Women-Inspiration-Artists-Entrepreneurs/dp/1579655971/ref=sr_1_3?s=books&ie=UTF8&qid=1476036838&sr=1-3&keywords=women+in+art")
 art_link2 = Link.create(title: "Women Artists: An Illustrated History", url: "https://www.amazon.com/Women-Artists-Illustrated-Nancy-Heller/dp/0789207680/ref=sr_1_5?s=books&ie=UTF8&qid=1476036838&sr=1-5&keywords=women+in+art")
+art_link3 = Link.create(title: "Frida Kahlo (Little People, Big Dreams)", url: "https://www.amazon.com/Frida-Kahlo-Little-People-Dreams/dp/1847807836/ref=sr_1_4?s=books&ie=UTF8&qid=1476137309&sr=1-4&keywords=frida+kahlo")
 
-art_links = [art_link1, art_link2]
-
-frida_kahlo.links << art_links
-# frida_kahlo.links.flatten!
-annie_leibovitz.links << art_links
-# annie_leibovitz.links.flatten!
-georgia_okeeffe.links << art_links
-# georgia_okeeffe.links.flatten!
+frida_kahlo.links << art_link3
+frida_kahlo.save
+annie_leibovitz.links << art_link2
+annie_leibovitz.save
+georgia_okeeffe.links << art_link1
+georgia_okeeffe.save
 
 # MUSIC
 clara_schumann = Figure.create(name: "Clara Schumann", bio: "Clara Schumann was a German musician and composer, considered one of the most distinguished pianists of the Romantic era. She exerted her influence over a 61-year concert career, changing the format and repertoire of the piano recital and the tastes of the listening public.", tagline: "My imagination can picture no fairer happiness than to continue living for art.", image: "http://imgur.com/BHmq6Uu.jpg")
@@ -165,15 +162,14 @@ joni_mitchell = Figure.create(name: "Joni Mitchell", bio: "Joni Mitchell is a Ca
 #Music links
 music_link1 = Link.create(title: "For the Love of Music: The Remarkable Story of Maria Anna Mozart", url: "https://www.amazon.com/Love-Music-Remarkable-Story-Mozart/dp/1582463263")
 music_link2 = Link.create(title: "Sing My Song: A Kid's Guide to Songwriting", url: "https://www.amazon.com/Sing-My-Song-Guide-Songwriting/dp/1582462666")
+music_link3 = Link.create(title: "Story of the Orchestra : Listen While You Learn About the Instruments, the Music and the Composers Who Wrote the Music!", url: "https://www.amazon.com/Story-Orchestra-Listen-Instruments-Composers/dp/1579121489/ref=sr_1_1?s=books&ie=UTF8&qid=1476137399&sr=1-1&keywords=music+kids")
 
-music_links = [music_link1, music_link2]
-
-clara_schumann.links << music_links
-# clara_schumann.links.flatten!
-billie_holiday.links << art_links
-# billie_holiday.links.flatten!
-joni_mitchell.links << art_links
-# joni_mitchell.links.flatten!
+clara_schumann.links << music_link1
+clara_schumann.save
+billie_holiday.links << music_link3
+billie_holiday.save
+joni_mitchell.links << music_link2
+joni_mitchell.save
 
 # EDUCATION
 malala_yousafzai = Figure.create(name: "Malala Yousafzai", bio: "By daring to go to school as a young teen, Malala defied Pakistani extremists and their violent attacks and became a global icon for the importance of educating girls. Because of Malala’s heroic and eloquent statements for girls’ education, she was awarded at age 17 the Nobel Prize for Peace in 2014.", tagline: "I do not want to be thought of as the ‘girl who was shot by the Taliban’ but the ‘girl who fought for education’.", image: "http://imgur.com/rPWMajD.jpg")
@@ -183,15 +179,14 @@ ann_cotton = Figure.create(name: "Ann Cotton", bio: "Ann Cotton is a Welsh entre
 #Education links
 education_link1 = Link.create(title: "I Am Malala: The Girl Who Stood Up for Education and Was Shot by the Taliban", url: "https://www.amazon.com/Am-Malala-Stood-Education-Taliban/dp/0316322407")
 education_link2 = Link.create(title: "An A From Miss Keller. Ages 5-9.", url: "https://www.amazon.com/Miss-Keller-Patricia-Polacco/dp/0399166912")
+education_link3 = Link.create(title: "Creative Schools: The Grassroots Revolution That's Transforming Education", url: "https://www.amazon.com/Creative-Schools-Grassroots-Revolution-Transforming/dp/0143108069/ref=sr_1_1?s=books&ie=UTF8&qid=1476137513&sr=1-1&keywords=education")
 
-education_links = [education_link1, education_link2]
-
-malala_yousafzai.links << education_links
-# malala_yousafzai.links.flatten!
-michelle_obama.links << education_links
-# michelle_obama.links.flatten!
-ann_cotton.links << education_links
-# ann_cotton.links.flatten!
+malala_yousafzai.links << education_link1
+malala_yousafzai.save
+michelle_obama.links << education_link3
+michelle_obama.save
+ann_cotton.links << education_link2
+ann_cotton.save
 
 # BUSINESS
 sheryl_sandberg = Figure.create(name: "Sheryl Sandberg", bio: "Sheryl Sandberg is an American technology executive, activist, and author. She is the Chief Operating Officer of Facebook and founder of Leanin.org. In June 2012, she was elected to the board of directors, becoming the first woman to serve on Facebook's board. The Lean In Foundation is dedicated to offering women the ongoing inspiration and support to help them achieve their goals. The organization desires to support women in three main ways: community, education, and circles, or small, coordinated peer groups that meet to share their experiences and learn together.", tagline: "Taking initiative pays off. It is hard to visualize someone as a leader if she is always waiting to be told what to do.", image: "http://imgur.com/CWoT9g4.jpg")
@@ -203,19 +198,18 @@ business_link1 = Link.create(title: "A Smart Girl's Guide: Money: How to Make It
 business_link2 = Link.create(title: "Indie Girl: From Starting a Band to Launching a Fashion Company, Nine Ways to Turn Your Creative Talent into Reality", url: "https://www.amazon.com/Indie-Girl-Starting-Launching-Creative/dp/0979017335")
 business_link3 = Link.create(title: "The Conquer Kit: A Creative Business Planner for Women Entrepreneurs", url: "https://www.amazon.com/Conquer-Kit-Creative-Business-Entrepreneurs/dp/0399175776/ref=sr_1_8?s=books&ie=UTF8&qid=1476041145&sr=1-8&keywords=women+in+business")
 
-business_links = [business_link1, business_link2, business_link3]
-
-sheryl_sandberg.links << business_links
-# sheryl_sandberg.links.flatten!
-indra_nooyi.links << business_links
-# indra_nooyi.links.flatten!
-arianna_huffington.links << business_links
-# arianna_huffington.links.flatten!
+sheryl_sandberg.links << business_link1
+sheryl_sandberg.save
+indra_nooyi.links << business_link2
+indra_nooyi.save
+arianna_huffington.links << business_link3
+arianna_huffington.save
 
 # TECH
 grace_hopper = Figure.create(name: "Grace Hopper", bio: "Grace Hopper was an American computer scientist and United States Navy Rear Admiral. She was one of the first programmers of the Harvard Mark I computer in 1944, invented the first compiler for a computer programming language,and was one of those who popularized the idea of machine-independent programming languages which led to the development of COBOL, one of the first high-level programming languages.", tagline: "I've always been more interested in the future than in the past.", image: "http://imgur.com/jtIDRuW.jpg")
 ada_lovelace = Figure.create(name: "Ada Lovelace", bio: "was an English mathematician and writer, chiefly known for her work on Charles Babbage's early mechanical general-purpose computer, the Analytical Engine. Her notes on the engine include what is recognised as the first algorithm intended to be carried out by a machine. As a result, she is often regarded as the first computer programmer.", tagline: "That brain of mine is something more than merely mortal, as time will show.", image: "http://imgur.com/LjTfttt.jpg")
 susan_kare = Figure.create(name: "Susan Kare", bio: "Susan Kare was the designer who helped bring the Apple computer to life with her sophisticated typography and iconic graphic design skills. Working alongside Steve Jobs, she shaped many of the now-common interface elements of the Mac, like the command icon, which she found while looking through a book of symbols.", tagline: "In design, there is not one right answer, there's a range.", image: "http://imgur.com/5SQEu2p.jpg")
+#sandy_metz
 
 #Tech links
 
@@ -223,29 +217,28 @@ tech_link1 = Link.create(title: "She Started It: A Documentary on Women Tech Fou
 tech_link2 = Link.create(title: "Learn to code online", url: "www.codecademy.com")
 tech_link3 = Link.create(title: "Learn for free about math, art, computer programming, economics, physics, chemistry, biology, medicine, finance, and history", url: "https://www.khanacademy.org/")
 
-tech_links = [tech_link1, tech_link2, tech_link3]
-
-grace_hopper.links << tech_links
-# grace_hopper.links.flatten!
-ada_lovelace.links << tech_links
-# ada_lovelace.links.flatten!
-susan_kare.links << tech_links
-# susan_kare.links.flatten!
+grace_hopper.links << tech_link3
+grace_hopper.save
+ada_lovelace.links << tech_link2
+ada_lovelace.save
+susan_kare.links << tech_link1
+susan_kare.save
 
 # HOSPITALITY
 alice_waters = Figure.create(name: "Alice Waters", bio: "Alice Waters is an American chef, restaurateur, activist and author. She is the owner of Chez Panisse, a Berkeley, California restaurant famous for its organic, locally grown ingredients and for pioneering California cuisine.", tagline: "The decisions you make are a choice of values that reflect your life in every way.", image: "http://imgur.com/cGNZL3x.jpg")
 martha_stewart = Figure.create(name: "Martha Stewart", bio: "Martha Stewart is an American businesswoman, writer, and television personality. As founder of Martha Stewart Living Omnimedia, she has gained success through a variety of business ventures, encompassing publishing, broadcasting, merchandising, and e-commerce. She has written numerous bestselling books, is the publisher of the Martha Stewart Living magazine, and hosted two long-running syndicated television shows, Martha, which ran from 2005 to 2012, and Martha Stewart Living, which ran from 1993 to 2005.", tagline: "Without an open-minded mind, you can never be a great success.", image: "http://imgur.com/cGNZL3x.jpg")
+julia_child = Figure.create(name: "Julia Child", bio: "was an American chef, author, and television personality. She is recognized for bringing French cuisine to the American public with her debut cookbook, Mastering the Art of French Cooking, and her subsequent television programs, the most notable of which was The French Chef, which premiered in 1963.", tagline: "Find something you're passionate about and keep tremendously interested in it.", image: "http://i.imgur.com/lBUNgTb.jpg")
 
-hospitality_link1 = Link.create(title: "Google", url: "wwww.google.com")
-hospitality_link2 = Link.create(title: "Amazon", url: "wwww.amazon.com")
-hospitality_link3 = Link.create(title: "Facebook", url: "wwww.facebook.com")
+hospitality_link1 = Link.create(title: "The Martha Rules: 10 Essentials for Achieving Success as You Start, Build, or Manage a Business", url: "https://www.amazon.com/Martha-Rules-Essentials-Achieving-Business-ebook/dp/1594865329/ref=sr_1_1?s=books&ie=UTF8&qid=1476137758&sr=1-1&keywords=martha+stewart+business")
+hospitality_link2 = Link.create(title: "Kid Chef: The Foodie Kids Cookbook: Healthy Recipes and Culinary Skills for the New Cook in the Kitchen", url: "https://www.amazon.com/Kid-Chef-Cookbook-Healthy-Culinary/dp/1943451206/ref=sr_1_3?s=books&ie=UTF8&qid=1476137805&sr=1-3&keywords=cooking+for+kids")
+hospitality_link3 = Link.create(title: "The Julia Child Foundation for Gastronomy and the Culinary Arts", url: "http://www.juliachildfoundation.org/timeline.html")
 
-hospitality_links = [hospitality_link1, hospitality_link2, hospitality_link3]
-
-alice_waters.links << hospitality_links
-# alice_waters.links.flatten!
-martha_stewart.links << hospitality_links
-# martha_stewart.links.flatten!
+alice_waters.links << hospitality_link2
+alice_waters.save
+martha_stewart.links << hospitality_link1
+martha_stewart.save
+julia_child.links << hospitality_link3
+julia_child.save
 
 # HEALTHCARE
 virginia_apgar = Figure.create(name: "Virginia Apgar", bio: "Virginia Apgar, M.D., was an American obstetrical anesthesiologist. She was a leader in the fields of anesthesiology and teratology, and introduced obstetrical considerations to the established field of neonatology. Dr. Apgar was the first woman to become a full professor at Columbia University College of Physicians and Surgeons and designed the first standardized method for evaluating the newborn's transition to life outside the womb—the Apgar Score.", tagline: "In solitude we give passionate attention to our lives, to our memories, to the details around us.", image: "http://imgur.com/D7xYJB9.jpg")
@@ -257,14 +250,12 @@ healthcare_link1 = Link.create(title: "Elizabeth Blackwell: Girl Doctor (Childho
 healthcare_link2 = Link.create(title: "Finding Wonders: Three Girls Who Changed Science", url: "https://www.amazon.com/Finding-Wonders-Three-Changed-Science/dp/1481465651")
 healthcare_link3 = Link.create(title: "Magnificent Minds: 16 Pioneering Women in Science and Medicine", url: "https://www.amazon.com/Magnificent-Minds-Pioneering-Science-Medicine/dp/1943431256/ref=sr_1_1?ie=UTF8&qid=1476066456&sr=8-1&keywords=women+in+medicine")
 
-healthcare_links = [healthcare_link1, healthcare_link2, healthcare_link3]
-
-virginia_apgar.links << healthcare_links
-# virginia_apgar.links.flatten!
-regina_benjamin.links << healthcare_links
-# regina_benjamin.links.flatten!
-elizabeth_blackwell.links << education_links
-# elizabeth_blackwell.links.flatten!
+virginia_apgar.links << healthcare_link3
+virginia_apgar.save
+regina_benjamin.links << healthcare_link2
+regina_benjamin.save
+elizabeth_blackwell.links << healthcare_link1
+elizabeth_blackwell.save
 
 # EDITORIAL
 toni_morrison = Figure.create(name: "Toni Morrison", bio: "Toni Morrison is an American novelist, editor, and Professor Emeritus at Princeton University. Her novels are known for their epic themes, vivid dialogue, and richly detailed characters. Ms. Morrison  won the Pulitzer Prize and the American Book Award in 1988 for her novel Beloved; she won the Nobel Prize for Literature in 1993.", tagline: "If there's a book you really want to read, but it hasn't been written yet, then you must write it.", image: "http://imgur.com/YJT4mQr.jpg")
@@ -273,62 +264,77 @@ jk_rowling = Figure.create(name: "J.K. Rowling", bio: "J.K. Rowling s a British 
 
 #Editorial links
 
-editorial_link1 = Link.create(title: "Google", url: "wwww.google.com")
-editorial_link2 = Link.create(title: "Amazon", url: "wwww.amazon.com")
-editorial_link3 = Link.create(title: "Facebook", url: "wwww.facebook.com")
+editorial_link1 = Link.create(title: "Toni Morrison: A Biography of a Nobel Prize-Winning Writer", url: "https://www.amazon.com/Toni-Morrison-Biography-Prize-Winning-African-American/dp/0766039897/ref=sr_1_2?ie=UTF8&qid=1476137425&sr=8-2&keywords=toni+morrison+biography")
+editorial_link2 = Link.create(title: "BBC Radio Bookclub: JK Rowling", url: "http://www.bbc.co.uk/programmes/p00fpv7t")
+editorial_link3 = Link.create(title: "JK Rowling Speaks at Harvard Commencement", url: "https://www.youtube.com/watch?v=wHGqp8lz36c")
+editorial_link4 = Link.create(title: "British Council, Literature: Margaret Atwood", url: "https://literature.britishcouncil.org/writer/margaret-atwood")
+editorial_link5 = Link.create(title: "Margaret Atwood on Science Fiction, Dystopias, and Intestinal Parasites", url: "https://www.wired.com/2013/09/geeks-guide-margaret-atwood/")
 
-editorial_links = [editorial_link1, editorial_link2, editorial_link3]
-
-toni_morrison.links << editorial_links
-# toni_morrison.links.flatten!
-margaret_atwood.links << editorial_links
-# margaret_atwood.links.flatten!
-jk_rowling.links << editorial_links
-# jk_rowling.links.flatten!
+toni_morrison.links << editorial_link1
+toni_morrison.save
+margaret_atwood.links << editorial_link4
+margaret_atwood.links << editorial_link5
+margaret_atwood.save
+jk_rowling.links << editorial_link2
+jk_rowling.links << editorial_link3
+jk_rowling.save
 
 # ENGINEERING
-maya_lin = Figure.create(name: "Maya Lin", bio: "stuff", tagline: "more stuff", image: "http://imgur.com/cGNZL3x.jpg")
+maya_lin = Figure.create(name: "Maya Lin", bio: "Maya Lin is an American designer and artist who is known for her work in sculpture and land art. She first came to fame at the age of 21 as the designer of the Vietnam Veterans Memorial in Washington, D.C.", tagline: "I try to give people a different way of looking at their surroundings. That's art to me.", image: "http://imgur.com/Tx53vob.jpg")
+judith_resnik = Figure.create(name: "Judith Resnik", bio: "Judith Resnik was an American engineer and a NASA astronaut who died when the Space Shuttle Challenger was destroyed during the launch of mission STS-51-L. Resnik was the second American female astronaut in space, logging 145 hours in orbit. She was a graduate of Carnegie Mellon University and had a Ph.D. in electrical engineering from the University of Maryland. The IEEE Judith Resnik Award for space engineering is named in her honor.", image: "http://i.imgur.com/bqqqLxM.jpg")
+edith_clarke = Figure.create(name: "Edith Clarke", bio: "Edith Clarke was the first female electrical engineer and the first female professor of electrical engineering at the University of Texas at Austin. She specialized in electrical power system analysis and wrote Circuit Analysis of A-C Power Systems. Clarke also won awards for her papers and a patent for a specialized calculator.", tagline: "There is no demand for women engineers, as such, as there are for women doctors; but there's always a demand for anyone who can do a good piece of work.", image: "http://imgur.com/a/xP0NN.jpg")
+
 
 #Engineering links
 engineering_link1 = Link.create(title: "Girls Think of Everything: Stories of Ingenious Inventions by Women", url: "https://www.amazon.com/Girls-Think-Everything-Ingenious-Inventions/dp/0618195637")
 engineering_link2 = Link.create(title: "Rosie Revere, Engineer. Ages 4-9.", url: "https://www.amazon.com/Rosie-Revere-Engineer-Andrea-Beaty/dp/1419708457")
 engineering_link3 = Link.create(title: "Maya Lin - A Strong Clear Vision (Documentary)", url: "https://www.amazon.com/Maya-Lin-Strong-Clear-Vision/dp/B00008PHD1?tag=amigi-20")
 
-engineering_links = [engineering_link1, engineering_link2, engineering_link3]
 
-maya_lin.links << engineering_links
-# maya_lin.links.flatten!
+maya_lin.links << engineering_link3
+maya_lin.save
+judith_resnik.links << engineering_link1
+judith_resnik.save
+edith_clarke.links << engineering_link2
+edith_clarke.save
 
 # LAW
-ruth_bader_ginsburg = Figure.create(name: "notorious RBG", bio: "awesome", tagline: "be awesome", image: "http://imgur.com/cGNZL3x.jpg")
-hilary_clinton = Figure.create(name: "notorious HRC", bio: "awesome", tagline: "be awesome", image: "http://imgur.com/cGNZL3x.jpg")
-sonia_ghandi = Figure.create(name: "notorious SG", bio: "awesome", tagline: "be awesome", image: "http://imgur.com/cGNZL3x.jpg")
+ruth_bader_ginsburg = Figure.create(name: "Ruth Bader Ginsburg", bio: "Ruth Bader Ginsburg is an Associate Justice of the Supreme Court of the United States. Ginsburg was appointed by President Bill Clinton and took the oath of office on August 10, 1993. She is the second female justice (after Sandra Day O'Connor) and one of three female justices currently serving on the Supreme Court (along with Sonia Sotomayor and Elena Kagan).", tagline: "My mother told me to be a lady. And for her, that meant be your own person, be independent.", image: "http://i.imgur.com/r5td2ka.jpg")
+hillary_clinton = Figure.create(name: "Hillary Rodham Clinton", bio: "Hillary Clinton is an American politician and the nominee of the Democratic Party for President of the United States in the 2016 election. She served as the 67th United States Secretary of State from 2009 to 2013, the junior United States Senator representing New York from 2001 to 2009, First Lady of the United States during the presidency of husband Bill Clinton from 1993 to 2001, and First Lady of Arkansas during his governorship from 1979 to 1981 and from 1983 to 1992.", tagline: "I believe that the rights of women and girls is the unfinished business of the 21st century.", image: "http://i.imgur.com/0XN258q.jpg")
+sonia_gandhi = Figure.create(name: "Sonia Gandhi", bio: "Sonia Gandhi is an Italian-born Indian politician, who has served as President of the Indian National Congress party since 1998. After her husband's assassination in 1991, she was invited by Congress leaders to take over the government but she refused and publicly stayed away from politics amidst constant prodding from the party. She finally agreed to join politics in 1997; in 1998, she was elected President of the Congress party.", tagline: "Together we can face any challenges as deep as the ocean and as high as the sky.", image: "http://i.imgur.com/YZayhAG.jpg")
 
 #Law links
 law_link1 = Link.create(title: "Sisters in Law: How Sandra Day O'Connor and Ruth Bader Ginsburg Went to the Supreme Court and Changed the World", url: "https://www.amazon.com/Sisters-Law-OConnor-Ginsburg-Supreme/dp/0062238469/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=amigi5-20&linkId=2096daf2112b361ffd05fce643234111")
+law_link2 = Link.create(title: "Hillary Clinton 2016", url: "https://www.hillaryclinton.com")
+law_link3 = Link.create(title: "Who is Hillary Clinton?", url: "http://www.cnn.com/2016/07/10/opinions/hillary-clinton-biography-carl-bernstein/")
+law_link4 = Link.create(title: "Sonia Gandhi: Triumph of Will", url: "https://www.amazon.com/Sonia-Gandhi-Sahibzada-Yusuf-Ansari/dp/8187943939/ref=sr_1_15?s=books&ie=UTF8&qid=1476138895&sr=1-15&keywords=sonia+gandhi+biography")
+law_link5 = Link.create(title: "Sonia Gandhi on 'Newslaundry Podcast’ - Podcast", url: "https://www.podcat.com/podcasts/vjutoa-newslaundry-podcast/person/nxrljk-sonia-gandhi")
 
-law_links = [law_link1]
-
-ruth_bader_ginsburg.links << law_links
-# ruth_bader_ginsburg.links.flatten!
-hilary_clinton.links << law_links
-# hilary_clinton.links.flatten!
-sonia_ghandi.links << law_links
-# sonia_ghandi.links.flatten!
+ruth_bader_ginsburg.links << law_link1
+ruth_bader_ginsburg.save
+hilary_clinton.links << law_link2
+hilary_clinton.links << law_link3
+hilary_clinton.save
+sonia_ghandi.links << law_link4
+sonia_ghandi.links << law_link5
+sonia_ghandi.save
 
 # TRADE
-amelia_earhart = Figure.create(name: "notorious AE", bio: "awesome", tagline: "be awesome", image: "http://imgur.com/cGNZL3x.jpg")
+amelia_earhart = Figure.create(name: "Amelia Earhart", bio: "Amelia  Earhart was an American aviation pioneer and author. Earhart was the first female aviator to fly solo across the Atlantic Ocean. She received the U.S. Distinguished Flying Cross for this record. She set many other records, wrote best-selling books about her flying experiences and was instrumental in the formation of The Ninety-Nines, an organization for female pilots. She was also a member of the National Woman's Party and an early supporter of the Equal Rights Amendment.", tagline: "Never interrupt someone doing what you said couldn't be done.", image: "http://i.imgur.com/K36JRPn.jpg")
+rosie_the_riveter = Figure.create(name: "Rosie the Riveter", bio: "Rosie the Riveter is a cultural icon of the United States, representing the American women who worked in factories and shipyards during World War II, many of whom produced munitions and war supplies. These women sometimes took entirely new jobs replacing the male workers who were in the military. Rosie the Riveter is used as a symbol of feminism and women's economic power. Similar images of women war workers appeared in other countries such as Britain and Australia.", tagline: "We can do it!", image: "http://imgur.com/GMbwMXT.jpg")
+mother_jones = Figure.create(name: "Mother Jones", bio: "Mother Jones was an Irish-born American schoolteacher and dressmaker who became a prominent labor and community organizer. She helped coordinate major strikes and cofounded the Industrial Workers of the World. In 1902 she was called 'the most dangerous woman in America' for her success in organizing mine workers and their families against the mine owners. In 1903, to protest the lax enforcement of the child labor laws in the Pennsylvania mines and silk mills, she organized a children's march from Philadelphia to the home of President Theodore Roosevelt in New York. Mother Jones magazine, established in 1970, is named for her.", tagline: "My address is like my shoes. It travels with me. I abide where there is a fight against wrong.", image: "http://imgur.com/mE8m42J.jpg")
 
 #Trade links
-trade_link1 = Link.create(title: "Google", url: "wwww.google.com")
-trade_link2 = Link.create(title: "Amazon", url: "wwww.amazon.com")
-trade_link3 = Link.create(title: "Facebook", url: "wwww.facebook.com")
+trade_link1 = Link.create(title: "Rosie the Riveter: Women Working on the Home Front in World War II", url: "https://www.amazon.com/Rosie-Riveter-Women-Working-Front/dp/0517885670/ref=sr_1_1?s=books&ie=UTF8&qid=1476142188&sr=1-1&keywords=rosie+the+riveter+books")
+trade_link2 = Link.create(title: "Who Was Amelia Earhart?", url: "https://www.amazon.com/Amelia-Earhart-Kate-Boehm-Jerome/dp/0448428563/ref=sr_1_1?s=books&ie=UTF8&qid=1476142233&sr=1-1&keywords=amelia+earhart")
+trade_link3 = Link.create(title: "Autobiography of Mother Jones", url: "https://www.amazon.com/Autobiography-Mother-Jones-Mary-Harris/dp/0486436454/ref=sr_1_3?s=books&ie=UTF8&qid=1476142809&sr=1-3&keywords=mother+jones")
 
-trade_links = [trade_link1, trade_link2, trade_link3]
-
-amelia_earhart.links << trade_links
-# amelia_earhart.links.flatten!
-
+amelia_earhart.links << trade_link2
+amelia_earhart.save
+rosie_the_riveter.links << trade_link1
+rosie_the_riveter.save
+mother_jones.links << trade_link3
+mother_jones.save
 
 science_interests = [bugs, living_things, environment, molecules, puzzles, animals, comp_sci, research, psychology, critical_thinking, systems, science_int]
 science_figures = [marie_curie, rachel_carson, jane_goodall]
