@@ -89,76 +89,317 @@ systems = Interest.create(name: "understanding new systems")
 
 # END OF INTERESTS!
 
+
+#CREATE FIELDS
 # SCIENCE
 science = Field.create(name: "science", description: "systematic knowledge of the physical or material world gained through observation and experimentation.")
-science_interests = [bugs, living_things, environment, molecules, puzzles, animals, comp_sci, research, psychology, critical_thinking, systems, science_int]
-science.interests << science_interests
-science.save
-
 # ART
 art = Field.create(name: "art", description: "Creating!")
-art_interests = [funky_clothes, getting_messy, art_int, music_int, songwriting, appreciating_beauty, telling_puns, making_a_statement, being_unique, critical_thinking, writing]
-art.interests << art_interests
-art.save
-
 # MUSIC
 music = Field.create(name: "music", description: "Making cool noises!")
-music_interests = [songwriting, drumming, singing, dancing, funky_clothes, appreciating_beauty, being_unique, telling_puns, making_a_statement, art_int, audio_production, performing, fine_wine, critical_thinking, playing_instruments]
-music.interests << music_interests
-music.save
-
 # EDUCATION
 education = Field.create(name: "education", description: "Teaching skills to others.")
-edu_interests = [public_speaking, teaching, helping_others, critical_thinking, playing_with_children]
-education.interests << edu_interests
-education.save
-
 # BUSINESS
 business = Field.create(name: "business", description: "Taking care of business.")
-business_interests = [public_speaking, suits, finance, cool_ideas, helping_others, making_a_statement, talking]
-business.interests << business_interests
-business.save
-
 # TECH
 tech = Field.create(name: "technology", description: "Taking care of tech business.")
-tech_interests = [comp_sci, problem_solving, puzzles, gadgets, programming, critical_thinking, systems]
-tech.interests << tech_interests
-tech.save
-
 # HOSPITALITY
 hospitality = Field.create(name: "hospitality", description: "Taking care of people.")
-hospitality_interests = [cooking, helping_others, managing, hosting, organizing, fine_wine]
-hospitality.interests << hospitality_interests
-hospitality.save
-
 # HEALTHCARE
 healthcare = Field.create(name: "healthcare", description: "Taking care of business.")
-healthcare_interests = [animals, helping_others, living_things, anatomy, germs, research, psychology, playing_with_children]
-healthcare.interests << healthcare_interests
-healthcare.save
-
 # EDITORIAL
 editorial = Field.create(name: "editorial", description: "Taking care of business.")
-editorial_interests = [writing, research, books, reading, critical_thinking, cats, coffee, problem_solving, poetry, literature]
-editorial.interests << editorial_interests
-editorial.save
-
 # ENGINEERING
 engineering = Field.create(name: "engineering", description: "Taking care of business.")
-engineering_interests = [making_things, gadgets, programming, problem_solving, legos, architecture, critical_thinking, systems]
-engineering.interests << engineering_interests
-engineering.save
-
 # LAW
 law = Field.create(name: "law and politics", description: "Taking care of business.")
-law_interests = [talking, policy, helping_others, history, making_history, problem_solving, critical_thinking, politics]
-law.interests << law_interests
-law.save
-
 # TRADE
 trade = Field.create(name: "manual trade", description: "Taking care of business.")
+
+
+
+#CREATE FIGURES AND LINKS
+# SCIENCE
+marie_curie = Figure.create(name: "Marie Curie", bio: "Marie Curie was a Polish physicist and chemist who was the first woman to win a Nobel Prize and remains the only person to have won Nobel Prizes in multiple sciences (Physics and Chemistry). She is especially well-known for her pioneering research on radioactivity.", tagline: "We must have perseverance and above all confidence in ourselves. We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.", image: "http://imgur.com/J1uYJLI.jpg")
+rachel_carson = Figure.create(name: "Rachel Carson", bio: "Rachel Carson was an American marine biologist and conservationist whose book Silent Spring and other writings are credited with advancing the global environmental movement. Silent Spring spurred a reversal in national pesticide policy, which led to a nationwide ban on DDT and other pesticides, and it inspired a grassroots environmental movement that led to the creation of the U.S. Environmental Protection Agency.", tagline: "The more clearly we can focus our attention on the wonders and realities of the universe about us, the less taste we shall have for destruction.", image: "http://imgur.com/g4CpfTm.jpg")
+jane_goodall = Figure.create(name: "Jane Goodall", bio: "Jane Goodall is a British primatologist, ethologist, anthropologist, and UN Messenger of Peace. Considered to be the world's foremost expert on chimpanzees, Goodall is best known for her 55-year study of social and family interactions of wild chimpanzees in Gombe Stream National Park, Tanzania. She is the founder of the Jane Goodall Institute and the Roots & Shoots program, and she has worked extensively on conservation and animal welfare issues.", tagline: "My mother always taught us that if people don't agree with you, the important thing is to listen to them. But if you've listened to them carefully and you still think that you're right, then you must have the courage of your convictions.", image: "http://imgur.com/xlehjEd.jpg")
+
+# Science Links
+science_link1 = Link.create(title: "Radioactive!: How Irène Curie and Lise Meitner Revolutionized Science and Changed the World: The fascinating, little-known story of how two brilliant female physicists’ groundbreaking discoveries led to the creation of the atomic bomb.", url: "https://www.amazon.com/Radioactive-Meitner-Revolutionized-Science-Changed/dp/161620415X")
+science_link2 = Link.create(title: "Ada Twist, Scientist: A story about the power of curiosity in the hands of a child who is on a mission to use science to understand her world. Ages 4-9.", url: "https://www.amazon.com/Ada-Twist-Scientist-Andrea-Beaty/dp/1419721372")
+science_link3 = Link.create(title: "Produced by Minnesota Public Radio, a science podcast for kids.", url: "http://www.brainson.org/")
+
+science_links = [science_link1, science_link2, science_link3]
+
+marie_curie.links << science_links
+# marie_curie.links.flatten!
+rachel_carson.links << science_links
+# rachel_carson.links.flatten!
+jane_goodall.links << science_links
+# jane_goodall.links.flatten!
+
+# ART
+frida_kahlo = Figure.new(name: "Frida Kahlo", bio: "Frida Kahlo is a well-known Mexican painter famous for her self-portraits. Her work has been celebrated internationally as emblematic of Mexican national and indigenous traditions, and by feminists for its uncompromising depiction of the female experience and form.", tagline: "I used to think I was the strangest person in the world but then I thought there are so many people in the world, there must be someone just like me who feels bizarre and flawed in the same ways I do. I would imagine her, and imagine that she must be out there thinking of me, too. Well, I hope that if you are out there and read this and know that, yes, it’s true I’m here, and I’m just as strange as you.", image: "http://imgur.com/qT7Zxmu.jpg")
+annie_leibovitz = Figure.create(name: "Annie Leibovitz", bio: "Annie Leibovitz is an American portrait photographer whose works spans more than 40 years. She is the only woman to have held an exhibition at London’s National Portrait Gallery.", tagline: "I'm more interested in being good than in being famous.", image: "http://imgur.com/EiYd0Z7.jpg")
+georgia_okeeffe = Figure.create(name: "Georgia O'Keeffe", bio: "Georgia O'Keeffe was one of the most significant artists of the 20th century. She was devoted to creating imagery that expressed what she called 'the wideness and wonder of the world as I live in it.' O’Keeffe’s images include abstractions, large-scale depictions of flowers, leaves, rocks, shells, bones and other natural forms, New York cityscapes and paintings of the unusual shapes and colors of architectural and landscape forms of northern New Mexico. O'Keeffe has been recognized as the 'Mother of American modernism'.", tagline: "I found I could say things with color and shapes that I couldn't say any other way - things I had no words for.", image: "http://imgur.com/naikLch.jpg")
+
+
+#Art links
+art_link1 = Link.create(title: "In the Company of Women: Inspiration and Advice from over 100 Makers, Artists, and Entrepreneurs", url: "https://www.amazon.com/Company-Women-Inspiration-Artists-Entrepreneurs/dp/1579655971/ref=sr_1_3?s=books&ie=UTF8&qid=1476036838&sr=1-3&keywords=women+in+art")
+art_link2 = Link.create(title: "Women Artists: An Illustrated History", url: "https://www.amazon.com/Women-Artists-Illustrated-Nancy-Heller/dp/0789207680/ref=sr_1_5?s=books&ie=UTF8&qid=1476036838&sr=1-5&keywords=women+in+art")
+
+art_links = [art_link1, art_link2]
+
+frida_kahlo.links << art_links
+# frida_kahlo.links.flatten!
+annie_leibovitz.links << art_links
+# annie_leibovitz.links.flatten!
+georgia_okeeffe.links << art_links
+# georgia_okeeffe.links.flatten!
+
+# MUSIC
+clara_schumann = Figure.create(name: "Clara Schumann", bio: "Clara Schumann was a German musician and composer, considered one of the most distinguished pianists of the Romantic era. She exerted her influence over a 61-year concert career, changing the format and repertoire of the piano recital and the tastes of the listening public.", tagline: "My imagination can picture no fairer happiness than to continue living for art.", image: "http://imgur.com/BHmq6Uu.jpg")
+billie_holiday = Figure.create(name: "Billie Holiday", bio: "Billie Holiday was an American jazz musician and singer-songwriter with a career spanning nearly thirty years. Holiday had a seminal influence on jazz music and pop singing. Her vocal style, strongly inspired by jazz instrumentalists, pioneered a new way of manipulating phrasing and tempo.", tagline: "If I'm going to sing like someone else, then I don't need to sing at all.", image: "http://imgur.com/PelgK9K.jpg")
+joni_mitchell = Figure.create(name: "Joni Mitchell", bio: "Joni Mitchell is a Canadian singer-songwriter. Rolling Stone has called her 'One of the greatest songwriters ever', and AllMusic has stated, 'When the dust settles, Joni Mitchell may stand as the most important and influential female recording artist of the late 20th century'. Her lyrics are noted for their developed poetics, addressing social and environmental ideals alongside personal feelings of romantic longing, confusion, disillusion, and joy.", tagline: "I see music as fluid architecture.", image: "http://imgur.com/xNJZOKE.jpg")
+
+#Music links
+music_link1 = Link.create(title: "For the Love of Music: The Remarkable Story of Maria Anna Mozart", url: "https://www.amazon.com/Love-Music-Remarkable-Story-Mozart/dp/1582463263")
+music_link2 = Link.create(title: "Sing My Song: A Kid's Guide to Songwriting", url: "https://www.amazon.com/Sing-My-Song-Guide-Songwriting/dp/1582462666")
+
+music_links = [music_link1, music_link2]
+
+clara_schumann.links << music_links
+# clara_schumann.links.flatten!
+billie_holiday.links << art_links
+# billie_holiday.links.flatten!
+joni_mitchell.links << art_links
+# joni_mitchell.links.flatten!
+
+# EDUCATION
+malala_yousafzai = Figure.create(name: "Malala Yousafzai", bio: "By daring to go to school as a young teen, Malala defied Pakistani extremists and their violent attacks and became a global icon for the importance of educating girls. Because of Malala’s heroic and eloquent statements for girls’ education, she was awarded at age 17 the Nobel Prize for Peace in 2014.", tagline: "I do not want to be thought of as the ‘girl who was shot by the Taliban’ but the ‘girl who fought for education’.", image: "http://imgur.com/rPWMajD.jpg")
+michelle_obama = Figure.create(name: "Michelle Obama", bio: "Michelle Obama, the first lady of the United States, has frequently championed the value of educating girls worldwide and, in 2015, unveiled 'Let Girls Learn,' a new U.S. initiative to support community-focused girls' education across the globe. The project will draw on 7,000 Peace Corps volunteers to support hundreds of new community projects that help girls go to school and stay in school.", tagline: "Girls are our change-makers -- our future doctors and teachers and entrepreneurs.", image: "http://imgur.com/uBT0kj2.jpg")
+ann_cotton = Figure.create(name: "Ann Cotton", bio: "Ann Cotton is a Welsh entrepreneur and philanthropist. She is the founder of Campfed, an international non-governmental, non-profit organization whose mandate is to eradicate poverty in Africa through the education of girls and the empowerment of young women. Ms. Cotton was awarded an Order of the British Empire (OBE) in the 2006 Queen's New Year Honours List in recognition of her services to education of young women in rural Africa.", tagline: "All children everywhere deserve the opportunity that is unlocked for them by education.", image: "http://imgur.com/KSPVBYu.jpg")
+
+#Education links
+education_link1 = Link.create(title: "I Am Malala: The Girl Who Stood Up for Education and Was Shot by the Taliban", url: "https://www.amazon.com/Am-Malala-Stood-Education-Taliban/dp/0316322407")
+education_link2 = Link.create(title: "An A From Miss Keller. Ages 5-9.", url: "https://www.amazon.com/Miss-Keller-Patricia-Polacco/dp/0399166912")
+
+education_links = [education_link1, education_link2]
+
+malala_yousafzai.links << education_links
+# malala_yousafzai.links.flatten!
+michelle_obama.links << education_links
+# michelle_obama.links.flatten!
+ann_cotton.links << education_links
+# ann_cotton.links.flatten!
+
+# BUSINESS
+sheryl_sandberg = Figure.create(name: "Sheryl Sandberg", bio: "Sheryl Sandberg is an American technology executive, activist, and author. She is the Chief Operating Officer of Facebook and founder of Leanin.org. In June 2012, she was elected to the board of directors, becoming the first woman to serve on Facebook's board. The Lean In Foundation is dedicated to offering women the ongoing inspiration and support to help them achieve their goals. The organization desires to support women in three main ways: community, education, and circles, or small, coordinated peer groups that meet to share their experiences and learn together.", tagline: "Taking initiative pays off. It is hard to visualize someone as a leader if she is always waiting to be told what to do.", image: "http://imgur.com/CWoT9g4.jpg")
+indra_nooyi = Figure.create(name: "Indra Nooyi", bio: "Indra Nooyi is a business executive and the current Chairperson and Chief Executive Officer of PepsiCo, the second largest food and beverage business in the world by net revenue. She has consistently ranked among the World's 100 Most Powerful Women.", tagline: "To be a CEO is a calling. You should not do it because it is a job. It is a calling, and you have got to be involved in it with your head, heart and hands. Your heart has got to be in the job; you got to love what you do; it consumes you.", image: "http://imgur.com/bxCfuJg.jpg")
+arianna_huffington = Figure.create(name: "Arianna Huffington", bio: "Arianna Huffington is a is a Greek American author, syndicated columnist, and businesswoman. Ms. Huffington is the co-founder and editor-in-chief of The Huffington Post. She is often listed as one of the most powerful women in media.", tagline: "Fearlessness is not the absence of fear. It's the mastery of fear. It's about getting up one more time than we fall down.", image: "http://imgur.com/QKeL65T.jpg")
+
+#Business links
+business_link1 = Link.create(title: "A Smart Girl's Guide: Money: How to Make It, Save It, and Spend It (Smart Girl's Guides)", url: "https://www.amazon.com/Smart-Girls-Guide-Revised-Guides/dp/1609584074")
+business_link2 = Link.create(title: "Indie Girl: From Starting a Band to Launching a Fashion Company, Nine Ways to Turn Your Creative Talent into Reality", url: "https://www.amazon.com/Indie-Girl-Starting-Launching-Creative/dp/0979017335")
+business_link3 = Link.create(title: "The Conquer Kit: A Creative Business Planner for Women Entrepreneurs", url: "https://www.amazon.com/Conquer-Kit-Creative-Business-Entrepreneurs/dp/0399175776/ref=sr_1_8?s=books&ie=UTF8&qid=1476041145&sr=1-8&keywords=women+in+business")
+
+business_links = [business_link1, business_link2, business_link3]
+
+sheryl_sandberg.links << business_links
+# sheryl_sandberg.links.flatten!
+indra_nooyi.links << business_links
+# indra_nooyi.links.flatten!
+arianna_huffington.links << business_links
+# arianna_huffington.links.flatten!
+
+# TECH
+grace_hopper = Figure.create(name: "Grace Hopper", bio: "Grace Hopper was an American computer scientist and United States Navy Rear Admiral. She was one of the first programmers of the Harvard Mark I computer in 1944, invented the first compiler for a computer programming language,and was one of those who popularized the idea of machine-independent programming languages which led to the development of COBOL, one of the first high-level programming languages.", tagline: "I've always been more interested in the future than in the past.", image: "http://imgur.com/jtIDRuW.jpg")
+ada_lovelace = Figure.create(name: "Ada Lovelace", bio: "was an English mathematician and writer, chiefly known for her work on Charles Babbage's early mechanical general-purpose computer, the Analytical Engine. Her notes on the engine include what is recognised as the first algorithm intended to be carried out by a machine. As a result, she is often regarded as the first computer programmer.", tagline: "That brain of mine is something more than merely mortal, as time will show.", image: "http://imgur.com/LjTfttt.jpg")
+susan_kare = Figure.create(name: "Susan Kare", bio: "Susan Kare was the designer who helped bring the Apple computer to life with her sophisticated typography and iconic graphic design skills. Working alongside Steve Jobs, she shaped many of the now-common interface elements of the Mac, like the command icon, which she found while looking through a book of symbols.", tagline: "In design, there is not one right answer, there's a range.", image: "http://imgur.com/5SQEu2p.jpg")
+
+#Tech links
+
+tech_link1 = Link.create(title: "She Started It: A Documentary on Women Tech Founders", url: "http://www.shestarteditfilm.com/")
+tech_link2 = Link.create(title: "Learn to code online", url: "www.codecademy.com")
+tech_link3 = Link.create(title: "Learn for free about math, art, computer programming, economics, physics, chemistry, biology, medicine, finance, and history", url: "https://www.khanacademy.org/")
+
+tech_links = [tech_link1, tech_link2, tech_link3]
+
+grace_hopper.links << tech_links
+# grace_hopper.links.flatten!
+ada_lovelace.links << tech_links
+# ada_lovelace.links.flatten!
+susan_kare.links << tech_links
+# susan_kare.links.flatten!
+
+# HOSPITALITY
+alice_waters = Figure.create(name: "Alice Waters", bio: "Alice Waters is an American chef, restaurateur, activist and author. She is the owner of Chez Panisse, a Berkeley, California restaurant famous for its organic, locally grown ingredients and for pioneering California cuisine.", tagline: "The decisions you make are a choice of values that reflect your life in every way.", image: "http://imgur.com/cGNZL3x.jpg")
+martha_stewart = Figure.create(name: "Martha Stewart", bio: "Martha Stewart is an American businesswoman, writer, and television personality. As founder of Martha Stewart Living Omnimedia, she has gained success through a variety of business ventures, encompassing publishing, broadcasting, merchandising, and e-commerce. She has written numerous bestselling books, is the publisher of the Martha Stewart Living magazine, and hosted two long-running syndicated television shows, Martha, which ran from 2005 to 2012, and Martha Stewart Living, which ran from 1993 to 2005.", tagline: "Without an open-minded mind, you can never be a great success.", image: "http://imgur.com/cGNZL3x.jpg")
+
+hospitality_link1 = Link.create(title: "Google", url: "wwww.google.com")
+hospitality_link2 = Link.create(title: "Amazon", url: "wwww.amazon.com")
+hospitality_link3 = Link.create(title: "Facebook", url: "wwww.facebook.com")
+
+hospitality_links = [hospitality_link1, hospitality_link2, hospitality_link3]
+
+alice_waters.links << hospitality_links
+# alice_waters.links.flatten!
+martha_stewart.links << hospitality_links
+# martha_stewart.links.flatten!
+
+# HEALTHCARE
+virginia_apgar = Figure.create(name: "Virginia Apgar", bio: "Virginia Apgar, M.D., was an American obstetrical anesthesiologist. She was a leader in the fields of anesthesiology and teratology, and introduced obstetrical considerations to the established field of neonatology. Dr. Apgar was the first woman to become a full professor at Columbia University College of Physicians and Surgeons and designed the first standardized method for evaluating the newborn's transition to life outside the womb—the Apgar Score.", tagline: "In solitude we give passionate attention to our lives, to our memories, to the details around us.", image: "http://imgur.com/D7xYJB9.jpg")
+regina_benjamin = Figure.create(name: "Regina Benjamin", bio: "Regina Benjamin, M.D., M.B.A., is an American physician and a former vice admiral in the U.S. Public Health Service Commissioned Corps who served as the 18th Surgeon General of the United States. Dr. Benjamin previously directed a nonprofit primary care medical clinic in Bayou La Batre, Alabama, and served on the Board of Trustees for the Morehouse School of Medicine.", tagline: "I believe it was divine intervention — it was in medical school when I realized there was nothing else I'd rather do with my life than to be a doctor.", image: "http://imgur.com/a3wxKtT.jpg")
+elizabeth_blackwell = Figure.create(name: "Elizabeth Blackwell", bio: "Elizabeth Blackwell was a British-born physician, notable as the first woman to receive a medical degree in the United States, as well as the first woman on the UK Medical Register. She was the first woman to graduate from medical school, a pioneer in promoting the education of women in medicine in the United States, and a social and moral reformer in both the United States and in the United Kingdom.", tagline: "If society will not admit of woman's free development, then society must be remodeled.", image: "http://imgur.com/oLEL5Pv.jpg")
+
+#Healthcare links
+healthcare_link1 = Link.create(title: "Elizabeth Blackwell: Girl Doctor (Childhood of Famous Americans)", url: "https://www.amazon.com/Elizabeth-Blackwell-Doctor-Childhood-Americans/dp/0689806272/ref=sr_1_1?ie=UTF8&qid=1476066392&sr=8-1&keywords=elizabeth+blackwell")
+healthcare_link2 = Link.create(title: "Finding Wonders: Three Girls Who Changed Science", url: "https://www.amazon.com/Finding-Wonders-Three-Changed-Science/dp/1481465651")
+healthcare_link3 = Link.create(title: "Magnificent Minds: 16 Pioneering Women in Science and Medicine", url: "https://www.amazon.com/Magnificent-Minds-Pioneering-Science-Medicine/dp/1943431256/ref=sr_1_1?ie=UTF8&qid=1476066456&sr=8-1&keywords=women+in+medicine")
+
+healthcare_links = [healthcare_link1, healthcare_link2, healthcare_link3]
+
+virginia_apgar.links << healthcare_links
+# virginia_apgar.links.flatten!
+regina_benjamin.links << healthcare_links
+# regina_benjamin.links.flatten!
+elizabeth_blackwell.links << education_links
+# elizabeth_blackwell.links.flatten!
+
+# EDITORIAL
+toni_morrison = Figure.create(name: "Toni Morrison", bio: "Toni Morrison is an American novelist, editor, and Professor Emeritus at Princeton University. Her novels are known for their epic themes, vivid dialogue, and richly detailed characters. Ms. Morrison  won the Pulitzer Prize and the American Book Award in 1988 for her novel Beloved; she won the Nobel Prize for Literature in 1993.", tagline: "If there's a book you really want to read, but it hasn't been written yet, then you must write it.", image: "http://imgur.com/YJT4mQr.jpg")
+margaret_atwood = Figure.create(name: "Margaret Atwood", bio: "Margaret Atwood is a Canadian poet, novelist, literary critic, essayist, and environmental activist. She is a winner of the Arthur C. Clarke Award and Prince of Asturias Award for Literature, has been shortlisted for the Booker Prize five times, winning once, and has been a finalist for the Governor General's Award several times, winning twice.", tagline: "A word after a word after a word is power.", image: "http://imgur.com/6kMX2ol.jpg")
+jk_rowling = Figure.create(name: "J.K. Rowling", bio: "J.K. Rowling s a British novelist, screenwriter and film producer best known as the author of the Harry Potter fantasy series. The books have gained worldwide attention, won multiple awards, and sold more than 400 million copies. They have become the best-selling book series in history and been the basis for a series of films over which Rowling had overall approval on the scripts and maintained creative control by serving as a producer on the final installment.", tagline: "We do not need magic to transform our world. We carry all the power we need inside ourselves already. We have the power to imagine better.", image: "http://imgur.com/zi2Co8x.jpg")
+
+#Editorial links
+
+editorial_link1 = Link.create(title: "Google", url: "wwww.google.com")
+editorial_link2 = Link.create(title: "Amazon", url: "wwww.amazon.com")
+editorial_link3 = Link.create(title: "Facebook", url: "wwww.facebook.com")
+
+editorial_links = [editorial_link1, editorial_link2, editorial_link3]
+
+toni_morrison.links << editorial_links
+# toni_morrison.links.flatten!
+margaret_atwood.links << editorial_links
+# margaret_atwood.links.flatten!
+jk_rowling.links << editorial_links
+# jk_rowling.links.flatten!
+
+# ENGINEERING
+maya_lin = Figure.create(name: "Maya Lin", bio: "stuff", tagline: "more stuff", image: "http://imgur.com/cGNZL3x.jpg")
+
+#Engineering links
+engineering_link1 = Link.create(title: "Girls Think of Everything: Stories of Ingenious Inventions by Women", url: "https://www.amazon.com/Girls-Think-Everything-Ingenious-Inventions/dp/0618195637")
+engineering_link2 = Link.create(title: "Rosie Revere, Engineer. Ages 4-9.", url: "https://www.amazon.com/Rosie-Revere-Engineer-Andrea-Beaty/dp/1419708457")
+engineering_link3 = Link.create(title: "Maya Lin - A Strong Clear Vision (Documentary)", url: "https://www.amazon.com/Maya-Lin-Strong-Clear-Vision/dp/B00008PHD1?tag=amigi-20")
+
+engineering_links = [engineering_link1, engineering_link2, engineering_link3]
+
+maya_lin.links << engineering_links
+# maya_lin.links.flatten!
+
+# LAW
+ruth_bader_ginsburg = Figure.create(name: "notorious RBG", bio: "awesome", tagline: "be awesome", image: "http://imgur.com/cGNZL3x.jpg")
+hilary_clinton = Figure.create(name: "notorious HRC", bio: "awesome", tagline: "be awesome", image: "http://imgur.com/cGNZL3x.jpg")
+sonia_ghandi = Figure.create(name: "notorious SG", bio: "awesome", tagline: "be awesome", image: "http://imgur.com/cGNZL3x.jpg")
+
+#Law links
+law_link1 = Link.create(title: "Sisters in Law: How Sandra Day O'Connor and Ruth Bader Ginsburg Went to the Supreme Court and Changed the World", url: "https://www.amazon.com/Sisters-Law-OConnor-Ginsburg-Supreme/dp/0062238469/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=amigi5-20&linkId=2096daf2112b361ffd05fce643234111")
+
+law_links = [law_link1]
+
+ruth_bader_ginsburg.links << law_links
+# ruth_bader_ginsburg.links.flatten!
+hilary_clinton.links << law_links
+# hilary_clinton.links.flatten!
+sonia_ghandi.links << law_links
+# sonia_ghandi.links.flatten!
+
+# TRADE
+amelia_earhart = Figure.create(name: "notorious AE", bio: "awesome", tagline: "be awesome", image: "http://imgur.com/cGNZL3x.jpg")
+
+#Trade links
+trade_link1 = Link.create(title: "Google", url: "wwww.google.com")
+trade_link2 = Link.create(title: "Amazon", url: "wwww.amazon.com")
+trade_link3 = Link.create(title: "Facebook", url: "wwww.facebook.com")
+
+trade_links = [trade_link1, trade_link2, trade_link3]
+
+amelia_earhart.links << trade_links
+# amelia_earhart.links.flatten!
+
+
+science_interests = [bugs, living_things, environment, molecules, puzzles, animals, comp_sci, research, psychology, critical_thinking, systems, science_int]
+science_figures = [marie_curie, rachel_carson, jane_goodall]
+science.interests << science_interests
+science.figures << science_figures
+science.save
+
+art_interests = [funky_clothes, getting_messy, art_int, music_int, songwriting, appreciating_beauty, telling_puns, making_a_statement, being_unique, critical_thinking, writing]
+art_figures = [frida_kahlo, annie_leibovitz, georgia_okeeffe]
+art.interests << art_interests
+art.figures << art_figures
+art.save
+
+music_interests = [songwriting, drumming, singing, dancing, funky_clothes, appreciating_beauty, being_unique, telling_puns, making_a_statement, art_int, audio_production, performing, fine_wine, critical_thinking, playing_instruments]
+music_figures = [clara_schumann, billie_holiday, joni_mitchell]
+music.interests << music_interests
+music.figures << music_figures
+music.save
+
+edu_interests = [public_speaking, teaching, helping_others, critical_thinking, playing_with_children]
+edu_figures = [malala_yousafzai, michelle_obama, ann_cotton]
+education.interests << edu_interests
+education.figures << edu_figures
+education.save
+
+business_interests = [public_speaking, suits, finance, cool_ideas, helping_others, making_a_statement, talking]
+business_figures = [sheryl_sandberg, indra_nooyi, arianna_huffington]
+business.interests << business_interests
+business.figures << business_figures
+business.save
+
+tech_interests = [comp_sci, problem_solving, puzzles, gadgets, programming, critical_thinking, systems]
+tech_figures = [grace_hopper, ada_lovelace, susan_kare]
+tech.interests << tech_interests
+tech.figures << tech_figures
+tech.save
+
+hospitality_interests = [cooking, helping_others, managing, hosting, organizing, fine_wine]
+hospitality_figures = [alice_waters, martha_stewart]
+hospitality.interests << hospitality_interests
+hospitality.figures << hospitality_figures
+hospitality.save
+
+healthcare_interests = [animals, helping_others, living_things, anatomy, germs, research, psychology, playing_with_children]
+healthcare_figures = [virginia_apgar, regina_benjamin, elizabeth_blackwell]
+healthcare.interests << healthcare_interests
+healthcare.figures << healthcare_figures
+healthcare.save
+
+editorial_interests = [writing, research, books, reading, critical_thinking, cats, coffee, problem_solving, poetry, literature]
+editorial_figures = [toni_morrison, margaret_atwood, jk_rowling]
+editorial.interests << editorial_interests
+editorial.figures << editorial_figures
+editorial.save
+
+engineering_interests = [making_things, gadgets, programming, problem_solving, legos, architecture, critical_thinking, systems]
+engineering_figures = [maya_lin]
+engineering.interests << engineering_interests
+engineering.figures << engineering_figures
+engineering.save
+
+law_interests = [talking, policy, helping_others, history, making_history, problem_solving, critical_thinking, politics]
+law_figures = [ruth_bader_ginsburg, hilary_clinton, sonia_ghandi]
+law.interests << law_interests
+law.figures << law_figures
+law.save
+
 trade_interests = [outdoors, exploring, crafts, hands, woodworking, roofs, problem_solving, science_int, systems]
+trade_figures = [amelia_earhart]
 trade.interests << trade_interests
+trade.figures << trade_figures
 trade.save
 
 
