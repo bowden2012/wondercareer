@@ -173,3 +173,58 @@ answer1 = Answer.create(answer_content: "Fixing people", scoring: '{"science": 1
 answer2 = Answer.create(answer_content: "Shopping at thrift-stores", scoring: '{"art": 1, "music": 1}', question_id: question1.id)
 answer3 = Answer.create(answer_content: "Building a custom computer", scoring: '{"tech": 1, "engineering": 1, "science": 1, "trade": 1}', question_id: question1.id)
 answer4 = Answer.create(answer_content: "Enjoying fine wines", scoring: '{"hospitality": 1, "music": 1, "editorial": 1, "law": 1, "business": 1}', question_id: question1.id)
+
+question2 = Question.create(question_content: "Pick the image that most excites you:", quiz_id: quiz.id)
+
+answer5 = Answer.create(answer_content: "Picture of money", scoring: '{"business": 1, "law": 1}', question_id: question2.id)
+answer6 = Answer.create(answer_content: "Picture of kittens next to books", scoring: '{"art": 1, "science": 1, "editorial": 1, "medicine": 1, "education": 1}', question_id: question2.id)
+answer7 = Answer.create(answer_content: "Picture of A lot of FOOD!", scoring: '{"hospitality": 1}', question_id: question2.id)
+answer8 = Answer.create(answer_content: "Picture of welding", scoring: '{"trade": 1, "tech": 1, "engineering": 1}', question_id: question2.id)
+
+question3 = Question.create(question_content: "If you saw a kitten stuck in a tree how would you help it?", quiz_id: quiz.id)
+
+answer9 = Answer.create(answer_content: "Call for help", scoring: '{"editorial": 1, "education": 1, "hospitality": 1, "healthcare": 1, }', question_id: question3.id)
+answer10 = Answer.create(answer_content: "Build a ladder to climb up the tree", scoring: '{"engineering": 1, "science": 1, "tech": 1}', question_id: question3.id)
+answer11 = Answer.create(answer_content: "Climb the tree with your bare hands", scoring: '{"trade": 1, "art": 1, "music": 1}', question_id: question3.id)
+answer12 = Answer.create(answer_content: "Ignore the kitten, they always land on their feet", scoring: '{"business": 1, "law": 1}', question_id: question3.id)
+
+question4 = Question.create(question_content: "Which of these sentiments do you agree with most?", quiz_id: quiz.id)
+
+answer13 = Answer.create(answer_content: "\"What we do every night, Pinky. Try to take over the world\" -- Pinky", scoring: '{"business": 1, "science": 1, "law": 1}', question_id: question4.id)
+answer14 = Answer.create(answer_content: "\"Hakuna Matata\" -- Puumba and Timon", scoring: '{"art": 1, "music": 1}', question_id: question4.id)
+answer15 = Answer.create(answer_content: "\"Guard well within yourself that treasure, kindness. Know how to give without hesitation, how to lose without regret, how to acquire without meanness.\" -- George Sand", scoring: '{"hospitality": 1, "healthcare": 1, "art": 1, "editorial": 1, "education": 1}', question_id: question4.id)
+answer16 = Answer.create(answer_content: "\"Computers make excellent and efficient servants but I have no wish to serve under them.\" -- Mr. Spock", scoring: '{"science": 1, "tech": 1, "engineering": 1, "trade": 1}', question_id: question4.id)
+
+question5 = Question.create(question_content: "Rate how strongly you agree with the following statement: \"I always tip at least 20% because everyone deserves a living wage.\"", quiz_id: quiz.id)
+
+answer13 = Answer.create(answer_content: "Strongly Disagree", scoring: '{"law": 1}', question_id: question5.id)
+answer14 = Answer.create(answer_content: "Disagree", scoring: '{"business": 1}', question_id: question5.id)
+answer15 = Answer.create(answer_content: "Neutral", scoring: '{"trade": 1, "science": 1, "engineering": 1, "tech": 1}', question_id: question5.id)
+answer16 = Answer.create(answer_content: "Agree", scoring: '{"editorial": 1, "education": 1, "healthcare": 1}', question_id: question5.id)
+answer17 = Answer.create(answer_content: "Strongly Agree", scoring: '{"hopsitality": 1, "music": 1, "art": 1}', question_id: question5.id)
+
+question6 = Question.create(question_content: "Pick the character you most identify with:", quiz_id: quiz.id)
+
+answer13 = Answer.create(answer_content: "Ariel", scoring: '{"music": 1}', question_id: question6.id)
+answer14 = Answer.create(answer_content: "Beaker", scoring: '{"science": 1}', question_id: question6.id)
+answer15 = Answer.create(answer_content: "Belle", scoring: '{"editorial": 1}', question_id: question6.id)
+answer16 = Answer.create(answer_content: "Gaston", scoring: '{"law": 1}', question_id: question6.id)
+answer17 = Answer.create(answer_content: "Gepetto", scoring: '{"trade": 1}', question_id: question6.id)
+answer18 = Answer.create(answer_content: "Lego Batman", scoring: '{"engineering": 1}', question_id: question6.id)
+answer19 = Answer.create(answer_content: "Pocahontas", scoring: '{"art": 1}', question_id: question6.id)
+answer20 = Answer.create(answer_content: "Rafiki", scoring: '{"healthcare": 1}', question_id: question6.id)
+answer21 = Answer.create(answer_content: "Scrooge McDuck", scoring: '{"business": 1}', question_id: question6.id)
+answer22 = Answer.create(answer_content: "Tiana", scoring: '{"hospitality": 1}', question_id: question6.id)
+answer23 = Answer.create(answer_content: "Wall-e", scoring: '{"tech": 1}', question_id: question6.id)
+answer24 = Answer.create(answer_content: "Yoda", scoring: '{"education": 1}', question_id: question6.id)
+
+question7 = Question.create(question_content: "Pick the character you most identify with:", quiz_id: quiz.id)
+
+answer25 = Answer.create(answer_content: "Red", scoring: '{"art": 1, "music": 1, "editorial": 1, "business": 1}', question_id: question7.id)
+answer26 = Answer.create(answer_content: "Yellow", scoring: '{"hospitality": 1, "education": 1, "law": 1}', question_id: question7.id)
+answer27 = Answer.create(answer_content: "Blue", scoring: '{"healthcare": 1, "trade": 1, "science": 1, "engineering": 1, "tech": 1}', question_id: question7.id)
+
+question8 = Question.create(question_content: "True or False: You like to work from home.", quiz_id: quiz.id)
+
+answer28 = Answer.create(answer_content: "True", scoring: '{"art": 1, "music": 1, "editorial": 1, "business": 1, "tech": 1}', question_id: question8.id)
+answer29 = Answer.create(answer_content: "False", scoring: '{"hospitality": 1, "science": 1, "law": 1, "healthcare":1, "trade": 1, "engineering": 1, "education": 1}', question_id: question8.id)
