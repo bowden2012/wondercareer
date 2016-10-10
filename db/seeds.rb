@@ -221,18 +221,28 @@ tech_link2 = Link.create(title: "Learn to code online", url: "www.codecademy.com
 tech_link3 = Link.create(title: "Learn for free about math, art, computer programming, economics, physics, chemistry, biology, medicine, finance, and history", url: "https://www.khanacademy.org/")
 
 # HOSPITALITY
-alice_waters = Figure.create(name: "Alice Waters", bio: "Alice Waters is an American chef, restaurateur, activist and author. She is the owner of Chez Panisse, a Berkeley, California restaurant famous for its organic, locally grown ingredients and for pioneering California cuisine.", tagline: "is an American chef, restaurateur, activist and author. She is the owner of Chez Panisse, a Berkeley, California restaurant famous for its organic, locally grown ingredients and for pioneering California cuisine.", image: )
+alice_waters = Figure.create(name: "Alice Waters", bio: "Alice Waters is an American chef, restaurateur, activist and author. She is the owner of Chez Panisse, a Berkeley, California restaurant famous for its organic, locally grown ingredients and for pioneering California cuisine.", tagline: "The decisions you make are a choice of values that reflect your life in every way.", image: )
 
 
 # HEALTHCARE
-virginia_apgar = Figure.create()
-healthcare_link1 = Link.create(https://www.amazon.com/Girls-Think-Everything-Ingenious-Inventions/dp/0618195637)
+virginia_apgar = Figure.create(name: "Virginia Apgar", bio: "Virginia Apgar, M.D., was an American obstetrical anesthesiologist. She was a leader in the fields of anesthesiology and teratology, and introduced obstetrical considerations to the established field of neonatology. Dr. Apgar was the first woman to become a full professor at Columbia University College of Physicians and Surgeons and designed the first standardized method for evaluating the newborn's transition to life outside the womb—the Apgar Score.", tagline: "In solitude we give passionate attention to our lives, to our memories, to the details around us.", image: )
+regina_benjamin = Figure.create(name: "Regina Benjamin", bio: "Regina Benjamin, M.D., M.B.A., is an American physician and a former vice admiral in the U.S. Public Health Service Commissioned Corps who served as the 18th Surgeon General of the United States. Dr. Benjamin previously directed a nonprofit primary care medical clinic in Bayou La Batre, Alabama, and served on the Board of Trustees for the Morehouse School of Medicine.", tagline: "I believe it was divine intervention — it was in medical school when I realized there was nothing else I'd rather do with my life than to be a doctor.", image: )
+elizabeth_blackwell = Figure.create(name: "Elizabeth Blackwell", bio: "Elizabeth Blackwell was a British-born physician, notable as the first woman to receive a medical degree in the United States, as well as the first woman on the UK Medical Register. She was the first woman to graduate from medical school, a pioneer in promoting the education of women in medicine in the United States, and a social and moral reformer in both the United States and in the United Kingdom.", tagline: "If society will not admit of woman's free development, then society must be remodeled.", image: )
+
+#Healthcare links
+healthcare_link1 = Link.create(title: "Elizabeth Blackwell: Girl Doctor (Childhood of Famous Americans)", url: "https://www.amazon.com/Elizabeth-Blackwell-Doctor-Childhood-Americans/dp/0689806272/ref=sr_1_1?ie=UTF8&qid=1476066392&sr=8-1&keywords=elizabeth+blackwell")
+healthcare_link2 = Link.create(title: "Finding Wonders: Three Girls Who Changed Science", url: "https://www.amazon.com/Finding-Wonders-Three-Changed-Science/dp/1481465651")
+healthcare_link3 = Link.create(title: "Magnificent Minds: 16 Pioneering Women in Science and Medicine", url: "https://www.amazon.com/Magnificent-Minds-Pioneering-Science-Medicine/dp/1943431256/ref=sr_1_1?ie=UTF8&qid=1476066456&sr=8-1&keywords=women+in+medicine")
+
 # EDITORIAL
-toni_morrison
-margarete_atwood
-jk_rowling
+toni_morrison = Figure.create(name: "Toni Morrison", bio: "Toni Morrison is an American novelist, editor, and Professor Emeritus at Princeton University. Her novels are known for their epic themes, vivid dialogue, and richly detailed characters. Ms. Morrison  won the Pulitzer Prize and the American Book Award in 1988 for her novel Beloved; she won the Nobel Prize for Literature in 1993.", tagline: "If there's a book you really want to read, but it hasn't been written yet, then you must write it.", image: )
+margaret_atwood = Figure.create(name: "Margaret Atwood", bio: "Margaret Atwood is a Canadian poet, novelist, literary critic, essayist, and environmental activist. She is a winner of the Arthur C. Clarke Award and Prince of Asturias Award for Literature, has been shortlisted for the Booker Prize five times, winning once, and has been a finalist for the Governor General's Award several times, winning twice.", tagline: "A word after a word after a word is power.", image: )
+jk_rowling = Figure.create(name: "J.K. Rowling", bio: "J.K. Rowling s a British novelist, screenwriter and film producer best known as the author of the Harry Potter fantasy series. The books have gained worldwide attention, won multiple awards, and sold more than 400 million copies. They have become the best-selling book series in history and been the basis for a series of films over which Rowling had overall approval on the scripts and maintained creative control by serving as a producer on the final installment.", tagline: "We do not need magic to transform our world. We carry all the power we need inside ourselves already. We have the power to imagine better.", image: )
+
+#Editorial links
 # ENGINEERING
 maya_lin = Figure.create()
+engineering_link1 = Link.create(title: "Girls Think of Everything: Stories of Ingenious Inventions by Women", url: "https://www.amazon.com/Girls-Think-Everything-Ingenious-Inventions/dp/0618195637")
 engineer_link1 = Link.create(https://www.amazon.com/Rosie-Revere-Engineer-Andrea-Beaty/dp/1419708457)
 engineer_link2 = Link.create(https://www.amazon.com/Maya-Lin-Strong-Clear-Vision/dp/B00008PHD1?tag=amigi-20)
 # LAW
