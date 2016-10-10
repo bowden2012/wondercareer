@@ -11,10 +11,6 @@ module Api
           render json: Field.where({name: fieldNameArray})
         end
 
-        # respond_to do |f|
-        #   f.html { render json: Field.all }
-        #   f.json { render json: Field.joins(:interests).where(interests: {id: interestIdArray})}
-        # end
       end
 
       def show
