@@ -1,20 +1,4 @@
 
-# science = Field.create(name: "Science")
-# marie = Figure.create(name: "Marie Curie")
-# rach = Figure.create(name: "Rachael Carson")
-
-# link1 = (url: "blah.com", title: "Title")
-# link2 = (url: "blah.com", title: "Title")
-# marie.links << [link1, link2]
-# marie.links.flatten!
-
-# link3 = (url: "blah.com", title: "Title")
-# link4 = (url: "blah.com", title: "Title")
-# rach.links << [link3, link4]
-# rach.links.flatten!
-
-# science.figures << [marie, rach]
-# science.figures.flatten!
 
 # ALL INTERESTS
 bugs = Interest.create(name: "bugs")
@@ -92,29 +76,29 @@ systems = Interest.create(name: "understanding new systems")
 
 #CREATE FIELDS
 # SCIENCE
-science = Field.create(name: "science", description: "The systematic knowledge of the physical or material world gained through observation and experimentation. Fields include the natural sciences, formal sciences, and social sciences.")
+science = Field.create(name: "Science", description: "Work with the building blocks behind the existence of all things.")
 # ART
-art = Field.create(name: "art", description: "This field requires creativity, perseverance, and discipline.")
+art = Field.create(name: "Art", description: "This field requires creativity, perseverance, and discipline.")
 # MUSIC
-music = Field.create(name: "music", description: "An art form that uses vocal or instrumental sounds (or both) to produce beauty of form, harmony, and expression of emotion.")
+music = Field.create(name: "Music", description: "Occupations can include musicians, producers, managers, and engineers.")
 # EDUCATION
-education = Field.create(name: "education", description: "Teaching and inspiring others, including children and adults.")
+education = Field.create(name: "Education", description: "Teaching and inspiring others, including children and adults.")
 # BUSINESS
-business = Field.create(name: "business", description: "Business roles require management, efficiency, .")
+business = Field.create(name: "Business", description: "Business roles require management, efficiency, and entrepreneurial thought.")
 # TECH
-tech = Field.create(name: "technology", description: "Taking care of tech business.")
+tech = Field.create(name: "Technology", description: "Work with the latest and greatest technology and help to define the future.")
 # HOSPITALITY
-hospitality = Field.create(name: "hospitality", description: "Taking care of people.")
+hospitality = Field.create(name: "Hospitality", description: "Hospitality revolves around the service industry, food preparation, home curation.")
 # HEALTHCARE
-healthcare = Field.create(name: "healthcare", description: "Healthcare is one of the fastest growing industries in the world.")
+healthcare = Field.create(name: "Healthcare", description: "Maintaining the health and wellness of humans and animals; one of the fastest growing fields in the world.")
 # EDITORIAL
-editorial = Field.create(name: "editorial", description: "Editorial fields require an ongoing engagement with language and a keen desire to communicate ideas to people effectively and efficiently..")
+editorial = Field.create(name: "Editorial", description: "Editorial fields require an ongoing engagement with language and a keen desire to communicate ideas effectively and efficiently.")
 # ENGINEERING
 engineering = Field.create(name: "engineering", description: "Engineers use skills learned from math and science in order to create efficient solutions to technical issues.")
 # LAW
-law = Field.create(name: "law and politics", description: "The principles and regulations established in a community by some authority and applicable to its people, whether in the form of legislation or of custom and policies recognized and enforced by judicial decision.")
+law = Field.create(name: "law and politics", description: "Working with governments, politics, and the rules and regulations that govern socities.")
 # TRADE
-trade = Field.create(name: "manual trade", description: "A craft is a pastime or a profession that requires particular skills and knowledge of skilled work.")
+trade = Field.create(name: "manual trade", description: "A trade requires particular knowledge of skilled or specialty work.")
 
 
 
