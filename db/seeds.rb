@@ -94,11 +94,11 @@ healthcare = Field.create(name: "Healthcare", description: "Maintaining the heal
 # EDITORIAL
 editorial = Field.create(name: "Editorial", description: "Editorial fields require an ongoing engagement with language and a desire to communicate ideas effectively and efficiently.")
 # ENGINEERING
-engineering = Field.create(name: "engineering", description: "Engineers use skills learned from math and science in order to create efficient solutions to technical issues.")
+engineering = Field.create(name: "Engineering", description: "Engineers use skills learned from math and science in order to create efficient solutions to technical issues.")
 # LAW
-law = Field.create(name: "law and politics", description: "Working with governments, politics, and the rules and regulations that govern socities.")
+law = Field.create(name: "Law and Politics", description: "Working with governments, politics, and the rules and regulations that govern socities.")
 # TRADE
-trade = Field.create(name: "manual trade", description: "A trade requires particular knowledge of skilled or specialty work.")
+trade = Field.create(name: "Manual Trade", description: "A trade requires particular knowledge of skilled or specialty work.")
 
 
 
@@ -209,8 +209,8 @@ susan_kare.links << tech_link1
 susan_kare.save
 
 # HOSPITALITY
-alice_waters = Figure.create(name: "Alice Waters", bio: "Alice Waters is an American chef, restaurateur, activist and author. She is the owner of Chez Panisse, a Berkeley, California restaurant famous for its organic, locally grown ingredients and for pioneering California cuisine.", tagline: "The decisions you make are a choice of values that reflect your life in every way.", image: "http://imgur.com/cGNZL3x.jpg")
-martha_stewart = Figure.create(name: "Martha Stewart", bio: "Martha Stewart is an American businesswoman, writer, and television personality. As founder of Martha Stewart Living Omnimedia, she has gained success through a variety of business ventures, encompassing publishing, broadcasting, merchandising, and e-commerce. She has written numerous bestselling books, is the publisher of the Martha Stewart Living magazine, and hosted two long-running syndicated television shows, Martha, which ran from 2005 to 2012, and Martha Stewart Living, which ran from 1993 to 2005.", tagline: "Without an open-minded mind, you can never be a great success.", image: "http://imgur.com/cGNZL3x.jpg")
+alice_waters = Figure.create(name: "Alice Waters", bio: "Alice Waters is an American chef, restaurateur, activist and author. She is the owner of Chez Panisse, a Berkeley, California restaurant famous for its organic, locally grown ingredients and for pioneering California cuisine.", tagline: "The decisions you make are a choice of values that reflect your life in every way.", image: "http://i.imgur.com/T73YJUn.jpg")
+martha_stewart = Figure.create(name: "Martha Stewart", bio: "Martha Stewart is an American businesswoman, writer, and television personality. As founder of Martha Stewart Living Omnimedia, she has gained success through a variety of business ventures, encompassing publishing, broadcasting, merchandising, and e-commerce. She has written numerous bestselling books, is the publisher of the Martha Stewart Living magazine, and hosted two long-running syndicated television shows, Martha, which ran from 2005 to 2012, and Martha Stewart Living, which ran from 1993 to 2005.", tagline: "Without an open-minded mind, you can never be a great success.", image: "http://i.imgur.com/IT7l1Xb.jpg")
 julia_child = Figure.create(name: "Julia Child", bio: "was an American chef, author, and television personality. She is recognized for bringing French cuisine to the American public with her debut cookbook, Mastering the Art of French Cooking, and her subsequent television programs, the most notable of which was The French Chef, which premiered in 1963.", tagline: "Find something you're passionate about and keep tremendously interested in it.", image: "http://i.imgur.com/lBUNgTb.jpg")
 
 hospitality_link1 = Link.create(title: "The Martha Rules: 10 Essentials for Achieving Success as You Start, Build, or Manage a Business", url: "https://www.amazon.com/Martha-Rules-Essentials-Achieving-Business-ebook/dp/1594865329/ref=sr_1_1?s=books&ie=UTF8&qid=1476137758&sr=1-1&keywords=martha+stewart+business")
@@ -265,8 +265,8 @@ jk_rowling.save
 
 # ENGINEERING
 maya_lin = Figure.create(name: "Maya Lin", bio: "Maya Lin is an American designer and artist who is known for her work in sculpture and land art. She first came to fame at the age of 21 as the designer of the Vietnam Veterans Memorial in Washington, D.C.", tagline: "I try to give people a different way of looking at their surroundings. That's art to me.", image: "http://imgur.com/Tx53vob.jpg")
-judith_resnik = Figure.create(name: "Judith Resnik", bio: "Judith Resnik was an American engineer and a NASA astronaut who died when the Space Shuttle Challenger was destroyed during the launch of mission STS-51-L. Resnik was the second American female astronaut in space, logging 145 hours in orbit. She was a graduate of Carnegie Mellon University and had a Ph.D. in electrical engineering from the University of Maryland. The IEEE Judith Resnik Award for space engineering is named in her honor.", image: "http://i.imgur.com/bqqqLxM.jpg")
-edith_clarke = Figure.create(name: "Edith Clarke", bio: "Edith Clarke was the first female electrical engineer and the first female professor of electrical engineering at the University of Texas at Austin. She specialized in electrical power system analysis and wrote Circuit Analysis of A-C Power Systems. Clarke also won awards for her papers and a patent for a specialized calculator.", tagline: "There is no demand for women engineers, as such, as there are for women doctors; but there's always a demand for anyone who can do a good piece of work.", image: "http://imgur.com/a/xP0NN.jpg")
+sally_ride = Figure.create(name: "Sally Ride", bio: "Sally Ride was an American physicist and astronaut. She joined NASA in 1978 and became the first American woman in space in 1983. Ride remains the youngest American astronaut to have traveled to space, having done so at the age of 32. She worked for two years at Stanford University's Center for International Security and Arms Control, then at the University of California, San Diego as a professor of physics, primarily researching nonlinear optics and Thomson scattering. She served on the committees that investigated the Challenger and Columbia space shuttle disasters, the only person to participate on both.", tagline: "All adventures, especially into new territory, are scary.", image: "http://i.imgur.com/r0eofeb.jpg")
+edith_clarke = Figure.create(name: "Edith Clarke", bio: "Edith Clarke was the first female electrical engineer and the first female professor of electrical engineering at the University of Texas at Austin. She specialized in electrical power system analysis and wrote Circuit Analysis of A-C Power Systems. Clarke also won awards for her papers and a patent for a specialized calculator.", tagline: "There is no demand for women engineers, as such, as there are for women doctors; but there's always a demand for anyone who can do a good piece of work.", image: "http://i.imgur.com/DRJyjMr.jpg")
 
 
 #Engineering links
@@ -277,8 +277,8 @@ engineering_link3 = Link.create(title: "Maya Lin - A Strong Clear Vision (Docume
 
 maya_lin.links << engineering_link3
 maya_lin.save
-judith_resnik.links << engineering_link1
-judith_resnik.save
+sally_ride.links << engineering_link1
+sally_ride.save
 edith_clarke.links << engineering_link2
 edith_clarke.save
 
@@ -375,7 +375,7 @@ editorial.figures << editorial_figures
 editorial.save
 
 engineering_interests = [making_things, gadgets, programming, problem_solving, legos, architecture, critical_thinking, systems]
-engineering_figures = [maya_lin, judith_resnik, edith_clarke]
+engineering_figures = [maya_lin, sally_ride, edith_clarke]
 engineering.interests << engineering_interests
 engineering.figures << engineering_figures
 engineering.save
