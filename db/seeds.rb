@@ -76,7 +76,7 @@ systems = Interest.create(name: "understanding new systems")
 
 #CREATE FIELDS
 # SCIENCE
-science = Field.create(name: "Science", description: "Work with the building blocks behind the existence of all things.")
+science = Field.create(name: "science", description: "Work with the building blocks behind the existence of all things.")
 # ART
 art = Field.create(name: "art", description: "This field requires creativity, perseverance, and discipline.")
 # MUSIC
