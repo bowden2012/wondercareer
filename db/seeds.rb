@@ -176,10 +176,10 @@ answer4 = Answer.create(answer_content: "Enjoy fine wines", scoring: '{"hospital
 
 question2 = Question.create(question_content: "Pick the image that most excites you:", quiz_id: quiz.id)
 
-answer5 = Answer.create(answer_content: "Picture of money", scoring: '{"business": 1, "law": 1}', question_id: question2.id)
-answer6 = Answer.create(answer_content: "Picture of kittens next to books", scoring: '{"art": 1, "science": 1, "editorial": 1, "healthcare": 1, "education": 1}', question_id: question2.id)
-answer7 = Answer.create(answer_content: "Picture of A lot of FOOD!", scoring: '{"hospitality": 1}', question_id: question2.id)
-answer8 = Answer.create(answer_content: "Picture of welding", scoring: '{"trade": 1, "tech": 1, "engineering": 1}', question_id: question2.id)
+answer5 = Answer.create(answer_content: "Money", scoring: '{"business": 1, "law": 1}', question_id: question2.id, image: 'http://i.imgur.com/sO3RL7v.jpg')
+answer6 = Answer.create(answer_content: "Literate kitten", scoring: '{"art": 1, "science": 1, "editorial": 1, "healthcare": 1, "education": 1}', question_id: question2.id, image: 'http://i.imgur.com/8og5FwG.gifv')
+answer7 = Answer.create(answer_content: "Numnums", scoring: '{"hospitality": 1}', question_id: question2.id, image: 'http://i.imgur.com/eqtYU8u.gif')
+answer8 = Answer.create(answer_content: "Welding", scoring: '{"trade": 1, "tech": 1, "engineering": 1}', question_id: question2.id, image: 'http://i.imgur.com/qbMC1En.jpg')
 
 question3 = Question.create(question_content: "If you saw a kitten stuck in a tree how would you help it?", quiz_id: quiz.id)
 
@@ -205,24 +205,24 @@ answer21 = Answer.create(answer_content: "Strongly Agree", scoring: '{"hospitali
 
 question6 = Question.create(question_content: "Pick the character you most identify with:", quiz_id: quiz.id)
 
-answer22 = Answer.create(answer_content: "Ariel", scoring: '{"music": 1}', question_id: question6.id)
-answer23 = Answer.create(answer_content: "Beaker", scoring: '{"science": 1}', question_id: question6.id)
-answer24 = Answer.create(answer_content: "Belle", scoring: '{"editorial": 1}', question_id: question6.id)
-answer25 = Answer.create(answer_content: "Gaston", scoring: '{"law": 1}', question_id: question6.id)
-answer26 = Answer.create(answer_content: "Gepetto", scoring: '{"trade": 1}', question_id: question6.id)
-answer27 = Answer.create(answer_content: "Lego Batman", scoring: '{"engineering": 1}', question_id: question6.id)
-answer28 = Answer.create(answer_content: "Pocahontas", scoring: '{"art": 1}', question_id: question6.id)
-answer29 = Answer.create(answer_content: "Rafiki", scoring: '{"healthcare": 1}', question_id: question6.id)
-answer30 = Answer.create(answer_content: "Scrooge McDuck", scoring: '{"business": 1}', question_id: question6.id)
-answer31 = Answer.create(answer_content: "Tiana", scoring: '{"hospitality": 1}', question_id: question6.id)
-answer32 = Answer.create(answer_content: "Wall-e", scoring: '{"tech": 1}', question_id: question6.id)
-answer33 = Answer.create(answer_content: "Yoda", scoring: '{"education": 1}', question_id: question6.id)
+answer22 = Answer.create(answer_content: "Ariel", scoring: '{"music": 1}', question_id: question6.id, image: 'http://i.imgur.com/LloKBh9.gif')
+answer23 = Answer.create(answer_content: "Beaker", scoring: '{"science": 1}', question_id: question6.id, image: 'http://i.imgur.com/r5q7hx5.gif')
+answer24 = Answer.create(answer_content: "Belle", scoring: '{"editorial": 1}', question_id: question6.id, image: 'http://i.imgur.com/De11OCj.gif')
+answer25 = Answer.create(answer_content: "Gaston", scoring: '{"law": 1}', question_id: question6.id, image: 'http://i.imgur.com/mXumxHO.gif')
+answer26 = Answer.create(answer_content: "Gepetto", scoring: '{"trade": 1}', question_id: question6.id, image: 'http://i.imgur.com/S9VCGCX.gif')
+answer27 = Answer.create(answer_content: "Lego Batman", scoring: '{"engineering": 1}', question_id: question6.id, image: 'http://i.imgur.com/EhJtFHe.gif')
+answer28 = Answer.create(answer_content: "Pocahontas", scoring: '{"art": 1}', question_id: question6.id, image: 'http://i.imgur.com/hkGSK4z.gif')
+answer29 = Answer.create(answer_content: "Rafiki", scoring: '{"healthcare": 1}', question_id: question6.id, image: 'http://i.imgur.com/WjFVbaA.gif')
+answer30 = Answer.create(answer_content: "Scrooge McDuck", scoring: '{"business": 1}', question_id: question6.id, image: 'http://i.imgur.com/QUcHh8e.gifv')
+answer31 = Answer.create(answer_content: "Tiana", scoring: '{"hospitality": 1}', question_id: question6.id, image: 'http://i.imgur.com/Quf9wOQ.gif')
+answer32 = Answer.create(answer_content: "Wall-e", scoring: '{"tech": 1}', question_id: question6.id, image: 'http://i.imgur.com/dIQPpeH.gif')
+answer33 = Answer.create(answer_content: "Yoda", scoring: '{"education": 1}', question_id: question6.id, image: 'http://i.imgur.com/26IiA31.gif')
 
 question7 = Question.create(question_content: "Pick the color you most identify with:", quiz_id: quiz.id)
 
-answer34 = Answer.create(answer_content: "Red", scoring: '{"art": 1, "music": 1, "editorial": 1, "business": 1}', question_id: question7.id)
-answer35 = Answer.create(answer_content: "Yellow", scoring: '{"hospitality": 1, "education": 1, "law": 1}', question_id: question7.id)
-answer36 = Answer.create(answer_content: "Blue", scoring: '{"healthcare": 1, "trade": 1, "science": 1, "engineering": 1, "tech": 1}', question_id: question7.id)
+answer34 = Answer.create(answer_content: "Red", scoring: '{"art": 1, "music": 1, "editorial": 1, "business": 1}', question_id: question7.id, image: 'http://i.imgur.com/MuNvSrg.jpg')
+answer35 = Answer.create(answer_content: "Yellow", scoring: '{"hospitality": 1, "education": 1, "law": 1}', question_id: question7.id, image: 'http://i.imgur.com/oDwHGLZ.jpg')
+answer36 = Answer.create(answer_content: "Blue", scoring: '{"healthcare": 1, "trade": 1, "science": 1, "engineering": 1, "tech": 1}', question_id: question7.id, image: 'http://i.imgur.com/1VvUKzZ.jpg')
 
 question8 = Question.create(question_content: "True or False: You like to work from home.", quiz_id: quiz.id)
 
