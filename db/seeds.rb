@@ -92,29 +92,29 @@ systems = Interest.create(name: "understanding new systems")
 
 #CREATE FIELDS
 # SCIENCE
-science = Field.create(name: "science", description: "systematic knowledge of the physical or material world gained through observation and experimentation.")
+science = Field.create(name: "science", description: "The systematic knowledge of the physical or material world gained through observation and experimentation. Fields include the natural sciences, formal sciences, and social sciences.")
 # ART
-art = Field.create(name: "art", description: "Creating!")
+art = Field.create(name: "art", description: "This field requires creativity, perseverance, and discipline.")
 # MUSIC
-music = Field.create(name: "music", description: "Making cool noises!")
+music = Field.create(name: "music", description: "An art form that uses vocal or instrumental sounds (or both) to produce beauty of form, harmony, and expression of emotion.")
 # EDUCATION
-education = Field.create(name: "education", description: "Teaching skills to others.")
+education = Field.create(name: "education", description: "Teaching and inspiring others, including children and adults.")
 # BUSINESS
-business = Field.create(name: "business", description: "Taking care of business.")
+business = Field.create(name: "business", description: "Business roles require management, efficiency, .")
 # TECH
 tech = Field.create(name: "technology", description: "Taking care of tech business.")
 # HOSPITALITY
 hospitality = Field.create(name: "hospitality", description: "Taking care of people.")
 # HEALTHCARE
-healthcare = Field.create(name: "healthcare", description: "Taking care of business.")
+healthcare = Field.create(name: "healthcare", description: "Healthcare is one of the fastest growing industries in the world.")
 # EDITORIAL
-editorial = Field.create(name: "editorial", description: "Taking care of business.")
+editorial = Field.create(name: "editorial", description: "Editorial fields require an ongoing engagement with language and a keen desire to communicate ideas to people effectively and efficiently..")
 # ENGINEERING
-engineering = Field.create(name: "engineering", description: "Taking care of business.")
+engineering = Field.create(name: "engineering", description: "Engineers use skills learned from math and science in order to create efficient solutions to technical issues.")
 # LAW
-law = Field.create(name: "law and politics", description: "Taking care of business.")
+law = Field.create(name: "law and politics", description: "The principles and regulations established in a community by some authority and applicable to its people, whether in the form of legislation or of custom and policies recognized and enforced by judicial decision.")
 # TRADE
-trade = Field.create(name: "manual trade", description: "Taking care of business.")
+trade = Field.create(name: "manual trade", description: "A craft is a pastime or a profession that requires particular skills and knowledge of skilled work.")
 
 
 
@@ -312,12 +312,12 @@ law_link5 = Link.create(title: "Sonia Gandhi on 'Newslaundry Podcast’ - Podcas
 
 ruth_bader_ginsburg.links << law_link1
 ruth_bader_ginsburg.save
-hilary_clinton.links << law_link2
-hilary_clinton.links << law_link3
-hilary_clinton.save
-sonia_ghandi.links << law_link4
-sonia_ghandi.links << law_link5
-sonia_ghandi.save
+hillary_clinton.links << law_link2
+hillary_clinton.links << law_link3
+hillary_clinton.save
+sonia_gandhi.links << law_link4
+sonia_gandhi.links << law_link5
+sonia_gandhi.save
 
 # TRADE
 amelia_earhart = Figure.create(name: "Amelia Earhart", bio: "Amelia  Earhart was an American aviation pioneer and author. Earhart was the first female aviator to fly solo across the Atlantic Ocean. She received the U.S. Distinguished Flying Cross for this record. She set many other records, wrote best-selling books about her flying experiences and was instrumental in the formation of The Ninety-Nines, an organization for female pilots. She was also a member of the National Woman's Party and an early supporter of the Equal Rights Amendment.", tagline: "Never interrupt someone doing what you said couldn't be done.", image: "http://i.imgur.com/K36JRPn.jpg")
@@ -397,7 +397,7 @@ engineering.figures << engineering_figures
 engineering.save
 
 law_interests = [talking, policy, helping_others, history, making_history, problem_solving, critical_thinking, politics]
-law_figures = [ruth_bader_ginsburg, hilary_clinton, sonia_ghandi]
+law_figures = [ruth_bader_ginsburg, hillary_clinton, sonia_gandhi]
 law.interests << law_interests
 law.figures << law_figures
 law.save
