@@ -111,7 +111,7 @@ jane_goodall = Figure.create(name: "Jane Goodall", bio: "Jane Goodall is a Briti
 # Science Links
 science_link1 = Link.create(title: "Radioactive!: How Irène Curie and Lise Meitner Revolutionized Science and Changed the World: The fascinating, little-known story of how two brilliant female physicists’ groundbreaking discoveries led to the creation of the atomic bomb.", url: "https://www.amazon.com/Radioactive-Meitner-Revolutionized-Science-Changed/dp/161620415X")
 science_link2 = Link.create(title: "Ada Twist, Scientist: A story about the power of curiosity in the hands of a child who is on a mission to use science to understand her world. Ages 4-9.", url: "https://www.amazon.com/Ada-Twist-Scientist-Andrea-Beaty/dp/1419721372")
-science_link3 = Link.create(title: "Produced by Minnesota Public Radio, a science podcast for kids.", url: "http://www.brainson.org/")
+science_link3 = Link.create(title: "Brainson, a science podcast for kids. Produced by Minnesota Public Radio.", url: "http://www.brainson.org/")
 
 marie_curie.links << science_link1
 marie_curie.save
@@ -146,7 +146,7 @@ joni_mitchell = Figure.create(name: "Joni Mitchell", bio: "Joni Mitchell is a Ca
 #Music links
 music_link1 = Link.create(title: "For the Love of Music: The Remarkable Story of Maria Anna Mozart", url: "https://www.amazon.com/Love-Music-Remarkable-Story-Mozart/dp/1582463263")
 music_link2 = Link.create(title: "Sing My Song: A Kid's Guide to Songwriting", url: "https://www.amazon.com/Sing-My-Song-Guide-Songwriting/dp/1582462666")
-music_link3 = Link.create(title: "Story of the Orchestra : Listen While You Learn About the Instruments, the Music and the Composers Who Wrote the Music!", url: "https://www.amazon.com/Story-Orchestra-Listen-Instruments-Composers/dp/1579121489/ref=sr_1_1?s=books&ie=UTF8&qid=1476137399&sr=1-1&keywords=music+kids")
+music_link3 = Link.create(title: "Story of the Orchestra: Listen While You Learn About the Instruments, the Music and the Composers Who Wrote the Music!", url: "https://www.amazon.com/Story-Orchestra-Listen-Instruments-Composers/dp/1579121489/ref=sr_1_1?s=books&ie=UTF8&qid=1476137399&sr=1-1&keywords=music+kids")
 
 clara_schumann.links << music_link1
 clara_schumann.save
@@ -198,8 +198,8 @@ susan_kare = Figure.create(name: "Susan Kare", bio: "Susan Kare was the designer
 #Tech links
 
 tech_link1 = Link.create(title: "She Started It: A Documentary on Women Tech Founders", url: "http://www.shestarteditfilm.com/")
-tech_link2 = Link.create(title: "Learn to code online", url: "www.codecademy.com")
-tech_link3 = Link.create(title: "Learn for free about math, art, computer programming, economics, physics, chemistry, biology, medicine, finance, and history", url: "https://www.khanacademy.org/")
+tech_link2 = Link.create(title: "Codeacademy.com: learn to code online", url: "www.codecademy.com")
+tech_link3 = Link.create(title: "KhanAcademy: learn for free about math, art, computer programming, economics, physics, chemistry, biology, medicine, finance, and history", url: "https://www.khanacademy.org/")
 
 grace_hopper.links << tech_link3
 grace_hopper.save
@@ -357,7 +357,7 @@ tech.figures << tech_figures
 tech.save
 
 hospitality_interests = [cooking, helping_others, managing, hosting, organizing, fine_wine]
-hospitality_figures = [alice_waters, martha_stewart]
+hospitality_figures = [alice_waters, martha_stewart, julia_child]
 hospitality.interests << hospitality_interests
 hospitality.figures << hospitality_figures
 hospitality.save
@@ -375,7 +375,7 @@ editorial.figures << editorial_figures
 editorial.save
 
 engineering_interests = [making_things, gadgets, programming, problem_solving, legos, architecture, critical_thinking, systems]
-engineering_figures = [maya_lin]
+engineering_figures = [maya_lin, judith_resnik, edith_clarke]
 engineering.interests << engineering_interests
 engineering.figures << engineering_figures
 engineering.save
@@ -387,7 +387,7 @@ law.figures << law_figures
 law.save
 
 trade_interests = [outdoors, exploring, crafts, hands, woodworking, roofs, problem_solving, science_int, systems]
-trade_figures = [amelia_earhart]
+trade_figures = [amelia_earhart, rosie_the_riveter, mother_jones]
 trade.interests << trade_interests
 trade.figures << trade_figures
 trade.save
