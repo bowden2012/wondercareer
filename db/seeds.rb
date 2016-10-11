@@ -88,11 +88,11 @@ business = Field.create(name: "Business", description: "Business roles require m
 # TECH
 tech = Field.create(name: "Technology", description: "Work with the latest and greatest technology and help to define the future.")
 # HOSPITALITY
-hospitality = Field.create(name: "Hospitality", description: "Hospitality revolves around the service industry, food preparation, home curation.")
+hospitality = Field.create(name: "Hospitality", description: "Hospitality revolves around the service industry, food preparation, and home curation.")
 # HEALTHCARE
 healthcare = Field.create(name: "Healthcare", description: "Maintaining the health and wellness of humans and animals; one of the fastest growing fields in the world.")
 # EDITORIAL
-editorial = Field.create(name: "Editorial", description: "Editorial fields require an ongoing engagement with language and a keen desire to communicate ideas effectively and efficiently.")
+editorial = Field.create(name: "Editorial", description: "Editorial fields require an ongoing engagement with language and a desire to communicate ideas effectively and efficiently.")
 # ENGINEERING
 engineering = Field.create(name: "engineering", description: "Engineers use skills learned from math and science in order to create efficient solutions to technical issues.")
 # LAW
@@ -111,7 +111,7 @@ jane_goodall = Figure.create(name: "Jane Goodall", bio: "Jane Goodall is a Briti
 # Science Links
 science_link1 = Link.create(title: "Radioactive!: How Irène Curie and Lise Meitner Revolutionized Science and Changed the World: The fascinating, little-known story of how two brilliant female physicists’ groundbreaking discoveries led to the creation of the atomic bomb.", url: "https://www.amazon.com/Radioactive-Meitner-Revolutionized-Science-Changed/dp/161620415X")
 science_link2 = Link.create(title: "Ada Twist, Scientist: A story about the power of curiosity in the hands of a child who is on a mission to use science to understand her world. Ages 4-9.", url: "https://www.amazon.com/Ada-Twist-Scientist-Andrea-Beaty/dp/1419721372")
-science_link3 = Link.create(title: "Brainson, a science podcast for kids. Produced by Minnesota Public Radio.", url: "http://www.brainson.org/")
+science_link3 = Link.create(title: "Brains On, a science podcast for kids. Produced by Minnesota Public Radio.", url: "http://www.brainson.org/")
 
 marie_curie.links << science_link1
 marie_curie.save
@@ -198,7 +198,7 @@ susan_kare = Figure.create(name: "Susan Kare", bio: "Susan Kare was the designer
 #Tech links
 
 tech_link1 = Link.create(title: "She Started It: A Documentary on Women Tech Founders", url: "http://www.shestarteditfilm.com/")
-tech_link2 = Link.create(title: "Codeacademy.com: learn to code online", url: "www.codecademy.com")
+tech_link2 = Link.create(title: "Codeacademy.com: learn to code online", url: "http://www.codecademy.com")
 tech_link3 = Link.create(title: "KhanAcademy: learn for free about math, art, computer programming, economics, physics, chemistry, biology, medicine, finance, and history", url: "https://www.khanacademy.org/")
 
 grace_hopper.links << tech_link3
