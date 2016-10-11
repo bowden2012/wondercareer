@@ -8,7 +8,7 @@ module Api
           render json: Field.joins(:interests).where(interests: {id: interestIdArray})
         elsif params['fieldNames']
           fieldNameArray = JSON.parse(params['fieldNames'])
-          # binding.pry
+          binding.pry
           render json: Field.where({name: fieldNameArray})
         end
 

@@ -78,27 +78,27 @@ systems = Interest.create(name: "understanding new systems")
 # SCIENCE
 science = Field.create(name: "Science", description: "Work with the building blocks behind the existence of all things.")
 # ART
-art = Field.create(name: "Art", description: "This field requires creativity, perseverance, and discipline.")
+art = Field.create(name: "art", description: "This field requires creativity, perseverance, and discipline.")
 # MUSIC
-music = Field.create(name: "Music", description: "Occupations can include musicians, producers, managers, and engineers.")
+music = Field.create(name: "music", description: "Occupations can include musicians, producers, managers, and engineers.")
 # EDUCATION
-education = Field.create(name: "Education", description: "Teaching and inspiring others, including children and adults.")
+education = Field.create(name: "education", description: "Teaching and inspiring others, including children and adults.")
 # BUSINESS
-business = Field.create(name: "Business", description: "Business roles require management, efficiency, and entrepreneurial thought.")
+business = Field.create(name: "business", description: "Business roles require management, efficiency, and entrepreneurial thought.")
 # TECH
-tech = Field.create(name: "Technology", description: "Work with the latest and greatest technology and help to define the future.")
+tech = Field.create(name: "technology", description: "Work with the latest and greatest technology and help to define the future.")
 # HOSPITALITY
-hospitality = Field.create(name: "Hospitality", description: "Hospitality revolves around the service industry, food preparation, and home curation.")
+hospitality = Field.create(name: "hospitality", description: "Hospitality revolves around the service industry, food preparation, and home curation.")
 # HEALTHCARE
-healthcare = Field.create(name: "Healthcare", description: "Maintaining the health and wellness of humans and animals; one of the fastest growing fields in the world.")
+healthcare = Field.create(name: "healthcare", description: "Maintaining the health and wellness of humans and animals; one of the fastest growing fields in the world.")
 # EDITORIAL
-editorial = Field.create(name: "Editorial", description: "Editorial fields require an ongoing engagement with language and a desire to communicate ideas effectively and efficiently.")
+editorial = Field.create(name: "editorial", description: "Editorial fields require an ongoing engagement with language and a desire to communicate ideas effectively and efficiently.")
 # ENGINEERING
 engineering = Field.create(name: "engineering", description: "Engineers use skills learned from math and science in order to create efficient solutions to technical issues.")
 # LAW
-law = Field.create(name: "law and politics", description: "Working with governments, politics, and the rules and regulations that govern socities.")
+law = Field.create(name: "law", description: "Working with governments, politics, and the rules and regulations that govern socities.")
 # TRADE
-trade = Field.create(name: "manual trade", description: "A trade requires particular knowledge of skilled or specialty work.")
+trade = Field.create(name: "trade", description: "A trade requires particular knowledge of skilled or specialty work.")
 
 
 
