@@ -407,7 +407,7 @@ answer4 = Answer.create(answer_content: "Enjoy fine wines", scoring: '{"hospital
 question2 = Question.create(question_content: "Pick the image that most excites you:", quiz_id: quiz.id)
 
 answer5 = Answer.create(answer_content: "Money", scoring: '{"business": 1, "law": 1}', question_id: question2.id, image: 'http://i.imgur.com/sO3RL7v.jpg')
-answer6 = Answer.create(answer_content: "Literate kitten", scoring: '{"art": 1, "science": 1, "editorial": 1, "healthcare": 1, "education": 1}', question_id: question2.id, image: 'http://i.imgur.com/8og5FwG.gifv')
+answer6 = Answer.create(answer_content: "Literate kitten", scoring: '{"art": 1, "science": 1, "editorial": 1, "healthcare": 1, "education": 1}', question_id: question2.id, image: 'http://i.giphy.com/4MXDXhmc7aHMk.gif')
 answer7 = Answer.create(answer_content: "Numnums", scoring: '{"hospitality": 1}', question_id: question2.id, image: 'http://i.imgur.com/eqtYU8u.gif')
 answer8 = Answer.create(answer_content: "Welding", scoring: '{"trade": 1, "tech": 1, "engineering": 1}', question_id: question2.id, image: 'http://i.imgur.com/qbMC1En.jpg')
 
@@ -443,7 +443,7 @@ answer26 = Answer.create(answer_content: "Gepetto", scoring: '{"trade": 1}', que
 answer27 = Answer.create(answer_content: "Lego Batman", scoring: '{"engineering": 1}', question_id: question6.id, image: 'http://i.imgur.com/EhJtFHe.gif')
 answer28 = Answer.create(answer_content: "Pocahontas", scoring: '{"art": 1}', question_id: question6.id, image: 'http://i.imgur.com/hkGSK4z.gif')
 answer29 = Answer.create(answer_content: "Rafiki", scoring: '{"healthcare": 1}', question_id: question6.id, image: 'http://i.imgur.com/WjFVbaA.gif')
-answer30 = Answer.create(answer_content: "Scrooge McDuck", scoring: '{"business": 1}', question_id: question6.id, image: 'http://i.imgur.com/QUcHh8e.gifv')
+answer30 = Answer.create(answer_content: "Scrooge McDuck", scoring: '{"business": 1}', question_id: question6.id, image: 'http://i.giphy.com/zQNeQBRHIpqdq.gif')
 answer31 = Answer.create(answer_content: "Tiana", scoring: '{"hospitality": 1}', question_id: question6.id, image: 'http://i.imgur.com/Quf9wOQ.gif')
 answer32 = Answer.create(answer_content: "Wall-e", scoring: '{"tech": 1}', question_id: question6.id, image: 'http://i.imgur.com/dIQPpeH.gif')
 answer33 = Answer.create(answer_content: "Yoda", scoring: '{"education": 1}', question_id: question6.id, image: 'http://i.imgur.com/26IiA31.gif')
