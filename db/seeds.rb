@@ -344,7 +344,7 @@ education.interests << edu_interests
 education.figures << edu_figures
 education.save
 
-business_interests = [public_speaking, suits, finance, cool_ideas, helping_others, making_a_statement, talking]
+business_interests = [public_speaking, suits, finance, cool_ideas, helping_others, managing, making_a_statement, talking]
 business_figures = [sheryl_sandberg, indra_nooyi, arianna_huffington]
 business.interests << business_interests
 business.figures << business_figures
